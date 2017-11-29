@@ -1,0 +1,218 @@
+.lines-helper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: luminosity;
+    .wrapper {
+        position: relative;
+        max-width: 1330px;
+        margin: 0 auto;
+        .line {
+            width: 1px;
+            height: 150vh;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: rgba(195, 195, 195, 0.3);
+        }
+        .line:first-child {
+            left: 0;
+        }
+        .line:nth-of-type(2) {
+            left: 25%;
+            margin-left: -0.5px;
+        }
+        .line:nth-of-type(3) {
+            left: 50%;
+            margin-left: -0.5px;
+        }
+        .line:nth-of-type(4) {
+            right: 25%;
+            margin-right: -0.5px;
+        }
+        .line:last-child {
+            right: 0;
+        }
+    }
+}
+
+.hero-img {
+    background: url(../img/bghome3.png) center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    box-shadow: inset 0 0 0 900px rgba(240, 242, 245, 0.91);
+    .grid-container {
+        z-index: 20;
+        h1 {
+            font-weight: 800;
+            background: linear-gradient(to left, #ffddd4 0%, #ff9170 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+            @include breakpoint(small only) {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .lword {
+                color: #303C48;
+                background: #303C48;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .card-home {
+            position: relative;
+            margin-bottom: 30px;
+            width: auto;
+            height: auto;
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #e0e0e0 100%);
+            border-radius: px;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.03), 0 18px 19px rgba(0, 0, 0, 0.03);
+            padding: 0 0px 30px 0px;
+            .topline {
+                background-image: linear-gradient(to right, #F89377 0%, #E7C77A 100%);
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 90px;
+                @include breakpoint(small only) {
+                    height: 40px;
+                }
+            }
+            .mobh3 {
+                padding: 1rem 0rem 0rem 1rem;
+                @include breakpoint(medium) {
+                    display: none;
+                }
+            }
+            .search {
+                padding: 0;
+                margin: 0 0 0 auto;
+                display: block;
+                width: 25%;
+                position: relative;
+                @include breakpoint(small only) {
+                    width: 100%;
+                }
+                span {
+                    position: absolute;
+                }
+                img {
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    margin-left: 5px;
+                    ;
+                    z-index: 1;
+                    width: 25px;
+                }
+                input::-webkit-input-placeholder {
+                    color: #d1d1d1;
+                }
+                input#char-name {
+                    border: 0;
+                    outline: 0;
+                    padding-left: 40px;
+                    border-bottom: 1px solid #e5e5e5;
+                    background-color: #F3F3F3;
+                    box-shadow: none;
+                    margin: 0;
+                    height: 45px;
+                    &:focus {
+                        border-bottom: 1px solid #F79577;
+                    }
+                }
+            }
+            .champtitle {
+                padding: 18px 37px 16px 39px;
+                width: auto;
+                color: #fff;
+                background-color: #252525;
+                display: table;
+                position: absolute;
+                top: 45px;
+                @include breakpoint(small only) {
+                    position: relative;
+                    top: 0;
+                }
+                h3 {
+                    font-weight: 300;
+                    display: inline-block;
+                    padding-bottom: 3px;
+                    position: relative;
+                }
+                h3:before {
+                    content: "";
+                    position: absolute;
+                    width: 26%;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    border-bottom: 2px solid #F79577;
+                }
+            }
+            .champions {
+                margin-top: 15px;
+                .icon {
+                    padding-top: 30px;
+                    &:first-child {
+                        padding-top: 0px;
+                    }
+                    span {
+                        font-size: 1.3rem;
+                        color: #F79577;
+                        display: block;
+                        margin-top: 15px;
+                        display: inline-flex;
+                        vertical-align: middle;
+                        align-items: center;
+                        padding-bottom: 3px;
+                        padding-left: 15px;
+                    }
+                    img {
+                        width: 44px;
+                    }
+                }
+                span:first-child {
+                    margin-top: 0px;
+                }
+                .champicons {
+                    padding: 0px 35px 0px 65px;
+                    figure.item {
+                        margin: 10px 20px 15px 0;
+                        display: inline-block;
+                        a {
+                            img {
+                                border-radius: 0px;
+                                transition: box-shadow .3s;
+                                &:hover {
+                                    box-shadow: 0 0 11px rgba(33, 33, 33, .33);
+                                }
+                            }
+                            span {
+                                display: block;
+                            }
+                            figcaption {
+                                font-size: 0.9rem;
+                                color: #90A4B7;
+                            }
+                            &:hover figcaption {
+                                color: #F79577;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
