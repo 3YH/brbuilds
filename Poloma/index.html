@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashka Build Guides :: Battlerite Builds</title>
+  <title>Poloma Build Guides :: Battlerite Builds</title>
   <link rel="stylesheet" href="../css/app.css">
   <link href="../css/jquery-ui.css" rel="stylesheet">
   <link rel="icon" href="../img/brbuilds.ico">
@@ -23,7 +23,7 @@
 
     <div class="hero-img br">
       <div class="champimg">
-        <img src="ashka.png" alt="">
+        <img src="poloma.png" alt="">
       </div>
       <div class="grid-container build">
         <div class="grid-y">
@@ -36,9 +36,9 @@
             <div class="card-home">
               <div class="topline"></div>
               <div class="champtitle">
-                <h3>Ashka Builds</h3>
+                <h3>Poloma Builds</h3>
                 <span>-</span>
-                <span>The molten fury</span>
+                <span>The Pyschopomp</span>
               </div>
               <div class="grid-y">
                 <div class="cell search">
@@ -50,14 +50,14 @@
                   <h3 class="mobh3">Builds:</h3>
                   <ul class="tabs" data-tabs id="br-builds">
                     <li class="tabs-title is-active">
-                      <a href="#panel1" aria-selected="true">Versatile build by Hotbiscuit</a>
+                      <a href="#panel1" aria-selected="true">vs Melee by Teldo</a>
                     </li>
                     <li class="tabs-title">
-                      <a href="#panel2" aria-selected="true">vs 2 Melee by Hotbiscuit</a>
-                    </li>
-                    <li class="tabs-title">
-                      <a href="#panel3" aria-selected="true">Build by Avserse/Miniluva</a>
-                    </li>
+                        <a href="#panel2" aria-selected="true">vs Non aggressive by Avserse/Miniluva</a>
+                      </li>
+                      <li class="tabs-title">
+                          <a href="#panel3" aria-selected="true">Build by Hotbiscuit</a>
+                        </li>
                   </ul>
                 </div>
               </div>
@@ -84,10 +84,10 @@
                 <div class="card">
                   <h4>Credits</h4>
                   <nav class="channels channel--adsila">
-                    <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
-                      <span class="channel__item-name">Hotbiscuit</span>
-                      <span class="channel__item-label">Check out his Twitch channel</span>
-                    </a>
+                      <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                          <span class="channel__item-name">Teldo</span>
+                          <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
                   </nav>
                 </div>
               </div>
@@ -112,11 +112,15 @@
                   <div class="card">
                     <h4>Credits</h4>
                     <nav class="channels channel--adsila">
-                      <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
-                        <span class="channel__item-name">Hotbiscuit</span>
-                        <span class="channel__item-label">Check out his Twitch channel</span>
-                      </a>
-                    </nav>
+                        <a class="channel__item" href="https://www.twitch.tv/averse">
+                          <span class="channel__item-name">Averse</span>
+                          <span class="channel__item-label">Check out his Twitch channel</span>
+                        </a>
+                        <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                          <span class="channel__item-name">Miniluva</span>
+                          <span class="channel__item-label">Check out his Twitch channel</span>
+                        </a>
+                      </nav>
                   </div>
                 </div>
               </div>
@@ -140,12 +144,8 @@
                     <div class="card">
                       <h4>Credits</h4>
                       <nav class="channels channel--adsila">
-                          <a class="channel__item" href="https://www.twitch.tv/averse">
-                            <span class="channel__item-name">Averse</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                          <a class="channel__item" href="https://www.twitch.tv/miniluva">
-                            <span class="channel__item-name">Miniluva</span>
+                          <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                            <span class="channel__item-name">Hotbiscuit</span>
                             <span class="channel__item-label">Check out his Twitch channel</span>
                           </a>
                         </nav>
@@ -168,73 +168,73 @@
         templateCompile = Handlebars.compile(handlebarsTemplate),
         data = {
           "battlerites": [{
-              "title": "Heat",
-              "imgurl": "br_1 (2)",
+              "title": "Spiritual Wind",
+              "imgurl": "br3 (30)",
               "border": "m",
-              "desc": "Fire Storm can be cast while moving at 50% movement speed and 30% while channeling."
+              "desc": "Spirit Rift increases your movement speed by 40% for 3s."
             },
             {
-              "title": "Burning Feet",
-              "imgurl": "br4 (2)",
-              "border": "m",
-              "desc": "Searing Flight increases movement speed by 40% for 2s."
+              "title": "Vengeful Spirit",
+              "imgurl": "br7 (24)",
+              "border": "c",
+              "desc": "Warping to Spirit Guide resets the cooldown of Spirit Rift."
             },
             {
-              "title": "Conflagration",
-              "imgurl": "br5 (46)",
+             "title": "Specter",
+              "imgurl": "br4 (29)",
+              "border": "sup",
+              "desc": "Other Side turns the target invisible for the duration."
+            },
+            {
+              "title": "Phantasm",
+              "imgurl": "br7 (24)",
+              "border": "sup",
+              "desc": "Ally affected by Spirit Guide takes 40% less damage and enemy affected by Spirit Guide takes 25% more damage."
+            },
+            {
+              "title": "Silver Fang",
+              "imgurl": "br4 (30)",
               "border": "o",
-              "desc": "Fireballs travelling through Firewall turn into Fire Storm bolts."
-            },
-            {
-              "title": "Inspiration",
-              "imgurl": "br5 (42)",
-              "border": "u",
-              "desc": "Increases your maximum energy by 25% and energy gained from abilities is increased by 10%."
-            },
-            {
-              "title": "Magma",
-              "imgurl": "br8 (32)",
-              "border": "o",
-              "desc": "Ignite deals 4 bonus damage and reduces targets movement speed by 10%."
+              "desc": "Ghost Wolf range increases by 20% and the first hit deals 4 bonus damage."
             }
           ]
         }
       $battleRites.html(templateCompile(data));
     </script>
-    <script>
+     <script>
         var $battleRites = $("#build2"),
           handlebarsTemplate = $("#handlebars-template").html(),
           templateCompile = Handlebars.compile(handlebarsTemplate),
           data = {
             "battlerites": [{
-                "title": "Heat",
-                "imgurl": "br_1 (2)",
-                "border": "m",
-                "desc": "Fire Storm can be cast while moving at 50% movement speed and 30% while channeling."
+              "title": "Specter",
+              "imgurl": "br4 (29)",
+              "border": "sup",
+              "desc": "Other Side turns the target invisible for the duration."
               },
               {
-                "title": "Blaze",
-                "imgurl": "br4 (2)",
+                "title": "Into The Realm",
+                "imgurl": "br4 (29)",
+                "border": "s",
+                "desc": "Other Side grants 6 additional healing and cooldown is reduced by 1s."
+              },
+              {
+                "title": "Phantasm",
+                "imgurl": "br7 (24)",
+                "border": "sup",
+                "desc": "Ally affected by Spirit Guide takes 40% less damage and enemy affected by Spirit Guide takes 25% more damage."
+              },
+              {
+                "title": "Silver Fang",
+                "imgurl": "br4 (30)",
                 "border": "o",
-                "desc": "Your next fireball after using Searing Flight deals 2 bonus damage and inflicts Ignite."
+                "desc": "Ghost Wolf range increases by 20% and the first hit deals 4 bonus damage."
               },
               {
-                "title": "Burning Feet",
-                "imgurl": "br4 (2)",
-                "border": "m",
-                "desc": "Searing Flight increases movement speed by 40% for 2s."
-              },
-              {
-                "title": "Inspiration",
-                "imgurl": "br5 (42)",
-                "border": "u",
-                "desc": "Increases your maximum energy by 25% and energy gained from abilities is increased by 10%."
-              },
-              {
-                "title": "Lava Punch",
-                "imgurl": "br4 (46)",
-                "border": "c",
-                "desc": "Molten Fist cooldown is reduced by 1.5s and hitting an enemy further reduces the cooldown by 1.5s."
+                "title": "Affection",
+                "imgurl": "br4 (30)",
+                "border": "mix",
+                "desc": "Ghost Wolf returns to you after the final attack, granting you 5% energy and health."
               }
             ]
           }
@@ -246,40 +246,40 @@
             templateCompile = Handlebars.compile(handlebarsTemplate),
             data = {
               "battlerites": [{
-                  "title": "Heat",
-                  "imgurl": "br_1 (2)",
-                  "border": "m",
-                  "desc": "Fire Storm can be cast while moving at 50% movement speed and 30% while channeling."
+                "title": "Dark Souls",
+                "imgurl": "br_1 (29)",
+                "border": "o",
+                "desc": "Damage dealt by Soul Bind increases to 50% from 30% and the range of Soul Bind is increased by 20%."
                 },
                 {
-                  "title": "Wild Fire",
-                  "imgurl": "br_1 (2)",
+                  "title": "Specter",
+                  "imgurl": "br4 (29)",
+                  "border": "sup",
+                  "desc": "Other Side turns the target invisible for the duration."
+                },
+                {
+                  "title": "Vengeful Spirit",
+                  "imgurl": "br7 (24)",
+                  "border": "c",
+                  "desc": "Warping to Spirit Guide resets the cooldown of Spirit Rift."
+                },
+                {
+                  "title": "Silver Fang",
+                  "imgurl": "br4 (30)",
                   "border": "o",
-                  "desc": "Fire Storm launches 1 additional projectile but cooldown increases by 1s."
+                  "desc": "Ghost Wolf range increases by 20% and the first hit deals 4 bonus damage."
                 },
                 {
-                  "title": "Burning Feet",
-                  "imgurl": "br4 (2)",
-                  "border": "m",
-                  "desc": "Searing Flight increases movement speed by 40% for 2s."
-                },
-                {
-                  "title": "Blaze",
-                  "imgurl": "br4 (2)",
-                  "border": "o",
-                  "desc": "Your next fireball after using Searing Flight deals 2 bonus damage and inflicts Ignite."
-                },
-                {
-                  "title": "Magma",
-                  "imgurl": "br8 (32)",
-                  "border": "o",
-                  "desc": "Ignite deals 4 bonus damage and reduces targets movement speed by 10%."
+                  "title": "Affection",
+                  "imgurl": "br4 (30)",
+                  "border": "mix",
+                  "desc": "Ghost Wolf returns to you after the final attack, granting you 5% energy and health."
                 }
               ]
             }
           $battleRites.html(templateCompile(data));
         </script>
-    <script>
+   <script>
       var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
     </script>
   </body>

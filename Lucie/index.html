@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucie Build Guides :: Battlerite Builds</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link href="../css/jquery-ui.css" rel="stylesheet">
+  <link rel="icon" href="../img/brbuilds.ico">
+
+  <body>
+    <div class="lines-helper">
+      <div class="wrapper">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="hero-img br">
+      <div class="champimg">
+        <img src="lucie.png" alt="">
+      </div>
+      <div class="grid-container build">
+        <div class="grid-y">
+          <div class="cell buildheader">
+            <a href="../index.html">
+              <h1>Battlerite
+                <span class="lword">Builds</span>
+              </h1>
+            </a>
+            <div class="card-home">
+              <div class="topline"></div>
+              <div class="champtitle">
+                <h3>Lucie Builds</h3>
+                <span>-</span>
+                <span>The Expelled Alchemist</span>
+              </div>
+              <div class="grid-y">
+                <div class="cell search">
+                  <img src="../img/icons/ic_search.png" alt="">
+                  <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
+                  <span id="suggestion"></span>
+                </div>
+                <div class="cell">
+                  <h3 class="mobh3">Builds:</h3>
+                  <ul class="tabs" data-tabs id="br-builds">
+                    <li class="tabs-title is-active">
+                      <a href="#panel1" aria-selected="true">Common by Avserse/Miniluva</a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#panel2" aria-selected="true">Survival by Avserse/Miniluva</a>
+                      </li>
+                      <li class="tabs-title">
+                          <a href="#panel3" aria-selected="true">Survival by Teldo</a>
+                        </li>
+                    <li class="tabs-title">
+                      <a href="#panel4" aria-selected="true">Build by Hotbiscuit</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content" data-tabs-content="br-builds">
+            <div class="tabs-panel is-active" id="panel1">
+              <div class="grid-x grid-padding-x medium-up-5" id="build1">
+                <script type="text/handlebars-template" id="handlebars-template">
+                  {{#battlerites}}
+                      <div class="cell">
+                        <div class="card">
+                          <div class="card-section text-center">
+                            <h4>{{title}}</h4>
+                            <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                            <p>{{desc}}</p>
+                          </div>
+                        </div>
+                      </div>   
+                  {{/battlerites}}
+                  </script>
+              </div>
+              <div class="cell shrink credits">
+                <div class="card">
+                  <h4>Credits</h4>
+                  <nav class="channels channel--adsila">
+                    <a class="channel__item" href="https://www.twitch.tv/averse">
+                      <span class="channel__item-name">Averse</span>
+                      <span class="channel__item-label">Check out his Twitch channel</span>
+                    </a>
+                    <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                      <span class="channel__item-name">Miniluva</span>
+                      <span class="channel__item-label">Check out his Twitch channel</span>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+                <div class="grid-x grid-padding-x medium-up-5" id="build2">
+                  <script type="text/handlebars-template" id="handlebars-template">
+                    {{#battlerites}}
+                        <div class="cell">
+                          <div class="card">
+                            <div class="card-section text-center">
+                              <h4>{{title}}</h4>
+                              <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                              <p>{{desc}}</p>
+                            </div>
+                          </div>
+                        </div>   
+                    {{/battlerites}}
+                    </script>
+                </div>
+                <div class="cell shrink credits">
+                  <div class="card">
+                    <h4>Credits</h4>
+                    <nav class="channels channel--adsila">
+                        <a class="channel__item" href="https://www.twitch.tv/averse">
+                          <span class="channel__item-name">Averse</span>
+                          <span class="channel__item-label">Check out his Twitch channel</span>
+                        </a>
+                        <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                          <span class="channel__item-name">Miniluva</span>
+                          <span class="channel__item-label">Check out his Twitch channel</span>
+                        </a>
+                      </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panel3">
+                  <div class="grid-x grid-padding-x medium-up-5" id="build3">
+                    <script type="text/handlebars-template" id="handlebars-template">
+                      {{#battlerites}}
+                          <div class="cell">
+                            <div class="card">
+                              <div class="card-section text-center">
+                                <h4>{{title}}</h4>
+                                <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                                <p>{{desc}}</p>
+                              </div>
+                            </div>
+                          </div>   
+                      {{/battlerites}}
+                      </script>
+                  </div>
+                  <div class="cell shrink credits">
+                    <div class="card">
+                      <h4>Credits</h4>
+                      <nav class="channels channel--adsila">
+                          <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                              <span class="channel__item-name">Teldo</span>
+                              <span class="channel__item-label">Check out his Twitch channel</span>
+                          </a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="panel4">
+                    <div class="grid-x grid-padding-x medium-up-5" id="build4">
+                      <script type="text/handlebars-template" id="handlebars-template">
+                        {{#battlerites}}
+                            <div class="cell">
+                              <div class="card">
+                                <div class="card-section text-center">
+                                  <h4>{{title}}</h4>
+                                  <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                                  <p>{{desc}}</p>
+                                </div>
+                              </div>
+                            </div>   
+                        {{/battlerites}}
+                        </script>
+                    </div>
+                    <div class="cell shrink credits">
+                      <div class="card">
+                        <h4>Credits</h4>
+                        <nav class="channels channel--adsila">
+                          <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                            <span class="channel__item-name">Hotbiscuit</span>
+                            <span class="channel__item-label">Check out his Twitch channel</span>
+                          </a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
+    <script src="../bower_components/what-input/dist/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script>
+      var $battleRites = $("#build1"),
+        handlebarsTemplate = $("#handlebars-template").html(),
+        templateCompile = Handlebars.compile(handlebarsTemplate),
+        data = {
+          "battlerites": [{
+              "title": "Stimulant",
+              "imgurl": "br3 (21)",
+              "border": "o",
+              "desc": "Revitalize increases damage output by 12%."
+            },
+            {
+              "title": "Companion Potion",
+              "imgurl": "br3 (21)",
+              "border": "sup",
+              "desc": "Healing Potion heals allies for 4 bonus health."
+            },
+            {
+              "title": "Alacrity",
+              "imgurl": "br5 (21)",
+              "border": "m",
+              "desc": "Barrier increases movement speed by 33%."
+            },
+            {
+              "title": "Potency",
+              "imgurl": "br8 (16)",
+              "border": "sup",
+              "desc": "Clarity Potion heals 8 health when removing a debuff and deals 8 damage when removing a buff."
+            },
+            {
+              "title": "Deadly Brew",
+              "imgurl": "br3 (22)",
+              "border": "o",
+              "desc": "Panic Flask deals 10 bonus damage."
+            }
+          ]
+        }
+      $battleRites.html(templateCompile(data));
+    </script>
+     <script>
+        var $battleRites = $("#build2"),
+          handlebarsTemplate = $("#handlebars-template").html(),
+          templateCompile = Handlebars.compile(handlebarsTemplate),
+          data = {
+            "battlerites": [{
+              "title": "Stimulant",
+              "imgurl": "br3 (21)",
+              "border": "o",
+              "desc": "Revitalize increases damage output by 12%."
+              },
+              {
+                "title": "Alacrity",
+                "imgurl": "br5 (21)",
+                "border": "m",
+                "desc": "Barrier increases movement speed by 33%."
+              },
+              {
+                "title": "Blast Shield",
+                "imgurl": "br5 (21)",
+                "border": "mix",
+                "desc": "Applying Barrier causes a shock wave dealing 6 damage and knocking nearby enemies back."
+              },
+              {
+                "title": "Chaos",
+                "imgurl": "br3 (22)",
+                "border": "c",
+                "desc": "Panic Flask explodes dealing 6 area damage and inflicting a Lesser Panic on all nearby enemies."
+              },
+              {
+                "title": "Swift Roll",
+                "imgurl": "br6 (21)",
+                "border": "m",
+                "desc": "Roll increases movement speed by 33% for 3s and the cooldown is reduced by 3s."
+              }
+            ]
+          }
+        $battleRites.html(templateCompile(data));
+      </script>
+      <script>
+          var $battleRites = $("#build3"),
+            handlebarsTemplate = $("#handlebars-template").html(),
+            templateCompile = Handlebars.compile(handlebarsTemplate),
+            data = {
+              "battlerites": [{
+                "title": "Swift Roll",
+                "imgurl": "br6 (21)",
+                "border": "m",
+                "desc": "Roll increases movement speed by 33% for 3s and the cooldown is reduced by 3s."
+                },
+                {
+                  "title": "Blast Shield",
+                  "imgurl": "br5 (21)",
+                  "border": "mix",
+                  "desc": "Applying Barrier causes a shock wave dealing 6 damage and knocking nearby enemies back."
+                },
+                {
+                  "title": "Alacrity",
+                  "imgurl": "br5 (21)",
+                  "border": "m",
+                  "desc": "Barrier increases movement speed by 33%."
+                },
+                {
+                  "title": "Stimulant",
+                  "imgurl": "br3 (21)",
+                  "border": "o",
+                  "desc": "Revitalize increases damage output by 12%."
+                },
+                {
+                  "title": "Agility",
+                  "imgurl": "br7 (17)",
+                  "border": "m",
+                  "desc": "Increases movement speed by 10%."
+                }
+              ]
+            }
+          $battleRites.html(templateCompile(data));
+        </script>
+        <script>
+            var $battleRites = $("#build4"),
+              handlebarsTemplate = $("#handlebars-template").html(),
+              templateCompile = Handlebars.compile(handlebarsTemplate),
+              data = {
+                "battlerites": [{
+                    "title": "Weakening Toxic",
+                    "imgurl": "br_1 (21)",
+                    "border": "mix",
+                    "desc": "Toxic reduces incoming healing by 20% and outgoing damage by 10%."
+                  },
+                  {
+                    "title": "Stimulant",
+                    "imgurl": "br3 (21)",
+                    "border": "o",
+                    "desc": "Revitalize increases damage output by 12%."
+                  },
+                  {
+                    "title": "Alacrity",
+                    "imgurl": "br5 (21)",
+                    "border": "m",
+                    "desc": "Barrier increases movement speed by 33%."
+                  },
+                  {
+                    "title": "Chaos",
+                    "imgurl": "br3 (22)",
+                    "border": "c",
+                    "desc": "Panic Flask explodes dealing 6 area damage and inflicting a Lesser Panic on all nearby enemies."
+                  },
+                  {
+                    "title": "Swift Roll",
+                    "imgurl": "br6 (21)",
+                    "border": "m",
+                    "desc": "Roll increases movement speed by 33% for 3s and the cooldown is reduced by 3s."
+                  }
+                ]
+              }
+            $battleRites.html(templateCompile(data));
+          </script>
+    <script>
+      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
+    </script>
+  </body>
+
+</html>

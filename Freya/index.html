@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croak Build Guides :: Battlerite Builds</title>
+    <title>Freya Build Guides :: Battlerite Builds</title>
     <link rel="stylesheet" href="../css/app.css">
     <link href="../css/jquery-ui.css" rel="stylesheet">
     <link rel="icon" href="../img/brbuilds.ico">
@@ -25,7 +25,7 @@
 
     <div class="hero-img br">
         <div class="champimg">
-            <img src="croak.png" alt="">
+            <img src="freya.png" alt="">
         </div>
         <div class="grid-container build">
             <div class="grid-y">
@@ -38,9 +38,9 @@
                     <div class="card-home">
                         <div class="topline"></div>
                         <div class="champtitle">
-                            <h3>Croak Builds</h3>
+                            <h3>Freya Builds</h3>
                             <span>-</span>
-                            <span>The Ranid Assassin</span>
+                            <span>The eye of the storm</span>
                         </div>
                         <div class="grid-y">
                             <div class="cell search">
@@ -52,14 +52,14 @@
                                 <h3 class="mobh3">Builds:</h3>
                                 <ul class="tabs" data-tabs id="br-builds">
                                     <li class="tabs-title is-active">
-                                        <a href="#panel1" aria-selected="true">Beginner-friendly by Teldo</a>
+                                        <a href="#panel1" aria-selected="true">Shields by Teldo</a>
                                     </li>
                                     <li class="tabs-title">
-                                        <a href="#panel2" aria-selected="true">Experienced by Teldo</a>
+                                        <a href="#panel2" aria-selected="true">Build by Avserse/Miniluva</a>
                                     </li>
                                     <li class="tabs-title">
-                                        <a href="#panel3" aria-selected="true">Build by Avserse/Miniluva</a>
-                                    </li>
+                                            <a href="#panel3" aria-selected="true">Build by Hotbiscuit</a>
+                                        </li>
                                 </ul>
                             </div>
                         </div>
@@ -114,46 +114,46 @@
                             <div class="card">
                                 <h4>Credits</h4>
                                 <nav class="channels channel--adsila">
-                                    <a class="channel__item" href="https://www.twitch.tv/teldoo">
-                                        <span class="channel__item-name">Teldo</span>
-                                        <span class="channel__item-label">Check out his Twitch channel</span>
-                                    </a>
-                                </nav>
+                                        <a class="channel__item" href="https://www.twitch.tv/averse">
+                                            <span class="channel__item-name">Averse</span>
+                                            <span class="channel__item-label">Check out his Twitch channel</span>
+                                        </a>
+                                        <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                                            <span class="channel__item-name">Miniluva</span>
+                                            <span class="channel__item-label">Check out his Twitch channel</span>
+                                        </a>
+                                    </nav>
                             </div>
                         </div>
                     </div>
                     <div class="tabs-panel" id="panel3">
-                        <div class="grid-x grid-padding-x medium-up-5" id="build3">
-                            <script type="text/handlebars-template" id="handlebars-template">
+                            <div class="grid-x grid-padding-x medium-up-5" id="build3">
+                              <script type="text/handlebars-template" id="handlebars-template">
                                 {{#battlerites}}
-                                <div class="cell">
-                                    <div class="card">
+                                    <div class="cell">
+                                      <div class="card">
                                         <div class="card-section text-center">
-                                            <h4>{{title}}</h4>
-                                            <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                                            <p>{{desc}}</p>
+                                          <h4>{{title}}</h4>
+                                          <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                                          <p>{{desc}}</p>
                                         </div>
-                                    </div>
-                                </div>
+                                      </div>
+                                    </div>   
                                 {{/battlerites}}
-                            </script>
-                        </div>
-                        <div class="cell shrink credits">
-                            <div class="card">
+                                </script>
+                            </div>
+                            <div class="cell shrink credits">
+                              <div class="card">
                                 <h4>Credits</h4>
                                 <nav class="channels channel--adsila">
-                                    <a class="channel__item" href="https://www.twitch.tv/averse">
-                                        <span class="channel__item-name">Averse</span>
-                                        <span class="channel__item-label">Check out his Twitch channel</span>
-                                    </a>
-                                    <a class="channel__item" href="https://www.twitch.tv/miniluva">
-                                        <span class="channel__item-name">Miniluva</span>
-                                        <span class="channel__item-label">Check out his Twitch channel</span>
-                                    </a>
+                                  <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                                    <span class="channel__item-name">Hotbiscuit</span>
+                                    <span class="channel__item-label">Check out his Twitch channel</span>
+                                  </a>
                                 </nav>
+                              </div>
                             </div>
-                        </div>
-                    </div>
+                          </div>
                 </div>
             </div>
         </div>
@@ -172,34 +172,34 @@
             templateCompile = Handlebars.compile(handlebarsTemplate),
             data = {
                 "battlerites": [{
-                        "title": "Severe Toxin",
-                        "imgurl": "br_1 (7)",
+                        "title": "Electric Conduction",
+                        "imgurl": "br6 (12)",
                         "border": "s",
-                        "desc": "Toxin reduces the targets movement speed by 12% and heals you for 8 additional health."
+                        "desc": "While the Spring effect is active, your next Bash also grants you a 14 health Shield for 3s."
                     },
                     {
-                        "title": "Spit Spit Spit",
-                        "imgurl": "br_1 (7)",
-                        "border": "u",
-                        "desc": "Toxin Muck gains 1 ability charge and the cooldown is increased by 1s."
-                    },
-                    {
-                        "title": "Twin Strikes",
-                        "imgurl": "br4 (7)",
+                        "title": "Hammer Time",
+                        "imgurl": "br_1 (14)",
                         "border": "o",
-                        "desc": "Frog Leap causes your next 2 Blade Furry strikes to deal 3 additional damage each."
+                        "desc": "Triggering Electric Shield reduces the remaining cooldown of Thunderclap by 2.5s"
                     },
                     {
-                        "title": "Jungle Toad",
-                        "imgurl": "br4 (7)",
+                        "title": "Lightning Rod",
+                        "imgurl": "br2 (14)",
                         "border": "s",
-                        "desc": "Frog Leap hits heal you for 14 health."
+                        "desc": "Each target hit by Thunderclap grants a 15 health shield."
                     },
                     {
-                        "title": "Venom Strike",
-                        "imgurl": "br8 (6)",
+                        "title": "Torrent",
+                        "imgurl": "br2 (14)",
                         "border": "o",
-                        "desc": "Blade Furry attacks made from Camouflage inflicts a venom that explodes after 2s dealing 10 area damage."
+                        "desc": "Thunderclap deals 5 bonus damage and pulls enemies towards you."
+                    },
+                    {
+                        "title": "Surge",
+                        "imgurl": "br5 (14)",
+                        "border": "mix",
+                        "desc": "Reduces Charged Strike cooldown by 3s and hitting at least one enemy grans 25% energy."
                     }
                 ]
             }
@@ -211,34 +211,34 @@
             templateCompile = Handlebars.compile(handlebarsTemplate),
             data = {
                 "battlerites": [{
-                        "title": "Jungle Toad",
-                        "imgurl": "br4 (7)",
-                        "border": "s",
-                        "desc": "Frog Leap hits heal you for 14 health."
+                        "title": "Overcharge",
+                        "imgurl": "br_1 (14)",
+                        "border": "mix",
+                        "desc": "Triggering Electric Shield inflicts Static on nearby enemies and applies a 16 health shiled on nearby allies."
                     },
                     {
-                        "title": "Precision Leap",
-                        "imgurl": "br4 (7)",
+                        "title": "Twin Hammers",
+                        "imgurl": "br2 (13)",
+                        "border": "mix",
+                        "desc": "Storm Mace gains 1 ability charge but cooldown increases by 0.5%."
+                    },
+                    {
+                        "title": "Tempest",
+                        "imgurl": "br2 (13)",
                         "border": "m",
-                        "desc": "Decrease the minimum range of Frog Leap by 20% and increase the maximum range by 10%."
+                        "desc": "Landing Storm Mace increases your movement speed by 35% for 2s."
                     },
                     {
-                        "title": "Severe Toxin",
-                        "imgurl": "br_1 (7)",
-                        "border": "s",
-                        "desc": "Toxin reduces the targets movement speed by 12% and heals you for 8 additional health."
-                    },
-                    {
-                        "title": "Venom Strike",
-                        "imgurl": "br8 (6)",
+                        "title": "Torrent",
+                        "imgurl": "br2 (14)",
                         "border": "o",
-                        "desc": "Blade Furry attacks made from Camouflage inflicts a venom that explodes after 2s dealing 10 area damage."
+                        "desc": "Thunderclap deals 5 bonus damage and pulls enemies towards you."
                     },
                     {
-                        "title": "Noxious Reaction",
-                        "imgurl": "br8 (6)",
-                        "border": "c",
-                        "desc": "Noxious Lunge inflicts a 1s Root and reapplies Toxin."
+                        "title": "Lightning Rod",
+                        "imgurl": "br2 (14)",
+                        "border": "s",
+                        "desc": "Each target hit by Thunderclap grants a 15 health shield."
                     }
                 ]
             }
@@ -250,34 +250,34 @@
             templateCompile = Handlebars.compile(handlebarsTemplate),
             data = {
                 "battlerites": [{
-                        "title": "Severe Toxin",
-                        "imgurl": "br_1 (7)",
+                    "title": "Electric Conduction",
+                    "imgurl": "br6 (12)",
+                    "border": "s",
+                    "desc": "While the Spring effect is active, your next Bash also grants you a 14 health Shield for 3s."
+                    },
+                    {
+                        "title": "Hammer Time",
+                        "imgurl": "br_1 (14)",
+                        "border": "o",
+                        "desc": "Triggering Electric Shield reduces the remaining cooldown of Thunderclap by 2.5s"
+                    },
+                    {
+                        "title": "Torrent",
+                        "imgurl": "br2 (14)",
+                        "border": "o",
+                        "desc": "Thunderclap deals 5 bonus damage and pulls enemies towards you."
+                    },
+                    {
+                        "title": "Lightning Rod",
+                        "imgurl": "br2 (14)",
                         "border": "s",
-                        "desc": "Toxin reduces the targets movement speed by 12% and heals you for 8 additional health."
+                        "desc": "Each target hit by Thunderclap grants a 15 health shield."
                     },
                     {
-                        "title": "Spit Spit Spit",
-                        "imgurl": "br_1 (7)",
-                        "border": "u",
-                        "desc": "Toxin Muck gains 1 ability charge and the cooldown is increased by 1s."
-                    },
-                    {
-                        "title": "Triple Strike",
-                        "imgurl": "br4 (7)",
-                        "border": "o",
-                        "desc": "Searing Flight increases movement speed by 40% for 2s."
-                    },
-                    {
-                        "title": "Precision Leap",
-                        "imgurl": "br4 (7)",
-                        "border": "m",
-                        "desc": "Decrease the minimum range of Frog Leap by 20% and increase the maximum range by 10%."
-                    },
-                    {
-                        "title": "Frog Frenzy",
-                        "imgurl": "br5 (8)",
-                        "border": "o",
-                        "desc": "Toxin Blades bonus damage is increased by 1 and it increases the attack speed of your next 6 Blade Furry swings."
+                        "title": "Surge",
+                        "imgurl": "br5 (14)",
+                        "border": "mix",
+                        "desc": "Reduces Charged Strike cooldown by 3s and hitting at least one enemy grans 25% energy."
                     }
                 ]
             }

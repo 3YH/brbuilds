@@ -1,0 +1,217 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taya Build Guides :: Battlerite Builds</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link href="../css/jquery-ui.css" rel="stylesheet">
+  <link rel="icon" href="../img/brbuilds.ico">
+
+  <body>
+    <div class="lines-helper">
+      <div class="wrapper">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="hero-img br">
+      <div class="champimg">
+        <img src="taya.png" alt="">
+      </div>
+      <div class="grid-container build">
+        <div class="grid-y">
+          <div class="cell buildheader">
+            <a href="../index.html">
+              <h1>Battlerite
+                <span class="lword">Builds</span>
+              </h1>
+            </a>
+            <div class="card-home">
+              <div class="topline"></div>
+              <div class="champtitle">
+                <h3>Taya Builds</h3>
+                <span>-</span>
+                <span>The Wind of the West</span>
+              </div>
+              <div class="grid-y">
+                <div class="cell search">
+                  <img src="../img/icons/ic_search.png" alt="">
+                  <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
+                  <span id="suggestion"></span>
+                </div>
+                <div class="cell">
+                  <h3 class="mobh3">Builds:</h3>
+                  <ul class="tabs" data-tabs id="br-builds">
+                      <li class="tabs-title is-active">
+                          <a href="#panel1" aria-selected="true">Build by Avserse/Miniluva</a>
+                        </li>
+                    <li class="tabs-title">
+                      <a href="#panel2" aria-selected="true">Build by Hotbiscuit</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content" data-tabs-content="br-builds">
+            <div class="tabs-panel is-active" id="panel1">
+              <div class="grid-x grid-padding-x medium-up-5" id="build1">
+                <script type="text/handlebars-template" id="handlebars-template">
+                  {{#battlerites}}
+                      <div class="cell">
+                        <div class="card">
+                          <div class="card-section text-center">
+                            <h4>{{title}}</h4>
+                            <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                            <p>{{desc}}</p>
+                          </div>
+                        </div>
+                      </div>   
+                  {{/battlerites}}
+                  </script>
+              </div>
+              <div class="cell shrink credits">
+                <div class="card">
+                  <h4>Credits</h4>
+                  <nav class="channels channel--adsila">
+                      <a class="channel__item" href="https://www.twitch.tv/averse">
+                        <span class="channel__item-name">Averse</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                      <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                        <span class="channel__item-name">Miniluva</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+                <div class="grid-x grid-padding-x medium-up-5" id="build2">
+                  <script type="text/handlebars-template" id="handlebars-template">
+                    {{#battlerites}}
+                        <div class="cell">
+                          <div class="card">
+                            <div class="card-section text-center">
+                              <h4>{{title}}</h4>
+                              <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                              <p>{{desc}}</p>
+                            </div>
+                          </div>
+                        </div>   
+                    {{/battlerites}}
+                    </script>
+                </div>
+                <div class="cell shrink credits">
+                  <div class="card">
+                    <h4>Credits</h4>
+                    <nav class="channels channel--adsila">
+                      <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                        <span class="channel__item-name">Hotbiscuit</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
+    <script src="../bower_components/what-input/dist/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script>
+      var $battleRites = $("#build1"),
+        handlebarsTemplate = $("#handlebars-template").html(),
+        templateCompile = Handlebars.compile(handlebarsTemplate),
+        data = {
+          "battlerites": [{
+              "title": "Cross Cut",
+              "imgurl": "br2 (41)",
+              "border": "o",
+              "desc": "X-Strike deals 4 bonus damage, and an 4 additional damage where its boomerangs intersect."
+            },
+            {
+              "title": "Surprise Attack",
+              "imgurl": "br2 (41)",
+              "border": "o",
+              "desc": "X-Strike can be used while moving at 60% movement speed during Haste."
+            },
+            {
+              "title": "Wind Fury",
+              "imgurl": "br_1 (42)",
+              "border": "m",
+              "desc": "Landing Wind Strike while affected by Haste reapplies Haste."
+            },
+            {
+              "title": "Cyclone",
+              "imgurl": "br_1 (42)",
+              "border": "c",
+              "desc": "Enemies that are knocked into a wall by Wind Strike are stunned for 0.8s."
+            },
+            {
+              "title": "Wind Stream",
+              "imgurl": "br3 (42)",
+              "border": "m",
+              "desc": "Increases the duration of wind streams spawned by Wind Bomb by 1s. The Haste duration is increased by 1s."
+            }
+          ]
+        }
+      $battleRites.html(templateCompile(data));
+    </script>
+    <script>
+        var $battleRites = $("#build2"),
+          handlebarsTemplate = $("#handlebars-template").html(),
+          templateCompile = Handlebars.compile(handlebarsTemplate),
+          data = {
+            "battlerites": [{
+                "title": "Heavy Boomerangs",
+                "imgurl": "br2 (41)",
+                "border": "c",
+                "desc": "X-Strike stun duration increases by 0.2s, and is further increased by 0.2s where the boomerangs intersect."
+              },
+              {
+                "title": "Wind Fury",
+                "imgurl": "br_1 (42)",
+                "border": "m",
+                "desc": "Landing Wind Strike while affected by Haste reapplies Haste."
+              },
+              {
+                "title": "Cyclone",
+                "imgurl": "br_1 (42)",
+                "border": "c",
+                "desc": "Enemies that are knocked into a wall by Wind Strike are stunned for 0.8s."
+              },
+              {
+                "title": "Vortex",
+                "imgurl": "br3 (42)",
+                "border": "c",
+                "desc": "Wind Bomb spawns a vortex that pulls enemies towards its center for 2s."
+              },
+              {
+                "title": "Wind Stream",
+                "imgurl": "br3 (42)",
+                "border": "m",
+                "desc": "Increases the duration of wind streams spawned by Wind Bomb by 1s. The Haste duration is increased by 1s."
+              }
+            ]
+          }
+        $battleRites.html(templateCompile(data));
+      </script>
+    <script>
+      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pearl Build Guides :: Battlerite Builds</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link href="../css/jquery-ui.css" rel="stylesheet">
+  <link rel="icon" href="../img/brbuilds.ico">
+
+  <body>
+    <div class="lines-helper">
+      <div class="wrapper">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="hero-img br">
+      <div class="champimg">
+        <img src="pearl.png" alt="">
+      </div>
+      <div class="grid-container build">
+        <div class="grid-y">
+          <div class="cell buildheader">
+            <a href="../index.html">
+              <h1>Battlerite
+                <span class="lword">Builds</span>
+              </h1>
+            </a>
+            <div class="card-home">
+              <div class="topline"></div>
+              <div class="champtitle">
+                <h3>Pearl Builds</h3>
+                <span>-</span>
+                <span>The Ocean Saga</span>
+              </div>
+              <div class="grid-y">
+                <div class="cell search">
+                  <img src="../img/icons/ic_search.png" alt="">
+                  <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
+                  <span id="suggestion"></span>
+                </div>
+                <div class="cell">
+                  <h3 class="mobh3">Builds:</h3>
+                  <ul class="tabs" data-tabs id="br-builds">
+                    <li class="tabs-title is-active">
+                      <a href="#panel1" aria-selected="true">Common by Avserse/Miniluva</a>
+                    </li>
+                    <li class="tabs-title">
+                      <a href="#panel2" aria-selected="true">vs Aggressive by Avserse/Miniluva</a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#panel3" aria-selected="true">Build by Hotbiscuit</a>
+                      </li>
+                      <li class="tabs-title">
+                          <a href="#panel4" aria-selected="true">vs Ranged by Teldo</a>
+                        </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content" data-tabs-content="br-builds">
+            <div class="tabs-panel is-active" id="panel1">
+              <div class="grid-x grid-padding-x medium-up-5" id="build1">
+                <script type="text/handlebars-template" id="handlebars-template">
+                  {{#battlerites}}
+                      <div class="cell">
+                        <div class="card">
+                          <div class="card-section text-center">
+                            <h4>{{title}}</h4>
+                            <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                            <p>{{desc}}</p>
+                          </div>
+                        </div>
+                      </div>   
+                  {{/battlerites}}
+                  </script>
+              </div>
+              <div class="cell shrink credits">
+                <div class="card">
+                  <h4>Credits</h4>
+                  <nav class="channels channel--adsila">
+                      <a class="channel__item" href="https://www.twitch.tv/averse">
+                        <span class="channel__item-name">Averse</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                      <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                        <span class="channel__item-name">Miniluva</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
+                </div>
+              </div>
+            </div>
+              <div class="tabs-panel" id="panel2">
+                  <div class="grid-x grid-padding-x medium-up-5" id="build2">
+                    <script type="text/handlebars-template" id="handlebars-template">
+                      {{#battlerites}}
+                          <div class="cell">
+                            <div class="card">
+                              <div class="card-section text-center">
+                                <h4>{{title}}</h4>
+                                <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                                <p>{{desc}}</p>
+                              </div>
+                            </div>
+                          </div>   
+                      {{/battlerites}}
+                      </script>
+                  </div>
+                  <div class="cell shrink credits">
+                    <div class="card">
+                      <h4>Credits</h4>
+                      <nav class="channels channel--adsila">
+                          <a class="channel__item" href="https://www.twitch.tv/averse">
+                            <span class="channel__item-name">Averse</span>
+                            <span class="channel__item-label">Check out his Twitch channel</span>
+                          </a>
+                          <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                            <span class="channel__item-name">Miniluva</span>
+                            <span class="channel__item-label">Check out his Twitch channel</span>
+                          </a>
+                        </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="panel3">
+                    <div class="grid-x grid-padding-x medium-up-5" id="build3">
+                      <script type="text/handlebars-template" id="handlebars-template">
+                        {{#battlerites}}
+                            <div class="cell">
+                              <div class="card">
+                                <div class="card-section text-center">
+                                  <h4>{{title}}</h4>
+                                  <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                                  <p>{{desc}}</p>
+                                </div>
+                              </div>
+                            </div>   
+                        {{/battlerites}}
+                        </script>
+                    </div>
+                    <div class="cell shrink credits">
+                      <div class="card">
+                        <h4>Credits</h4>
+                        <nav class="channels channel--adsila">
+                          <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                            <span class="channel__item-name">Hotbiscuit</span>
+                            <span class="channel__item-label">Check out his Twitch channel</span>
+                          </a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-panel" id="panel4">
+                      <div class="grid-x grid-padding-x medium-up-5" id="build4">
+                        <script type="text/handlebars-template" id="handlebars-template">
+                          {{#battlerites}}
+                              <div class="cell">
+                                <div class="card">
+                                  <div class="card-section text-center">
+                                    <h4>{{title}}</h4>
+                                    <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                                    <p>{{desc}}</p>
+                                  </div>
+                                </div>
+                              </div>   
+                          {{/battlerites}}
+                          </script>
+                      </div>
+                      <div class="cell shrink credits">
+                        <div class="card">
+                          <h4>Credits</h4>
+                          <nav class="channels channel--adsila">
+                              <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                                  <span class="channel__item-name">Teldo</span>
+                                  <span class="channel__item-label">Check out his Twitch channel</span>
+                              </a>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
+    <script src="../bower_components/what-input/dist/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script>
+      var $battleRites = $("#build1"),
+        handlebarsTemplate = $("#handlebars-template").html(),
+        templateCompile = Handlebars.compile(handlebarsTemplate),
+        data = {
+          "battlerites": [{
+            "title": "Soaking Wet",
+            "imgurl": "br3 (25)",
+            "border": "c",
+            "desc": "The Silence duration from a charged Volatile Water is increased to 1.4s from 1s."
+            },
+            {
+              "title": "Rippling Waters",
+              "imgurl": "br3 (25)",
+              "border": "o",
+              "desc": "Firing Volatile Water through a Bubble Barrier increases travel distance by 25% and damage by 5."
+            },
+            {
+              "title": "Sea Bubble",
+              "imgurl": "br8 (19)",
+              "border": "s",
+              "desc": "Tidal Wave spawns a Lesser Bubble Barrier around you when triggered."
+            },
+            {
+              "title": "Gush",
+              "imgurl": "br8 (19)",
+              "border": "c",
+              "desc": "Tidal Wave recharges your staff when triggered."
+            },
+            {
+              "title": "Ocean Sage",
+              "imgurl": "br3 (26)",
+              "border": "u",
+              "desc": "Bubble Barrier can be recast within 1.5s to spawn a Lesser Bubble Barrier."
+            }
+          ]
+        }
+      $battleRites.html(templateCompile(data));
+    </script>
+    <script>
+        var $battleRites = $("#build2"),
+          handlebarsTemplate = $("#handlebars-template").html(),
+          templateCompile = Handlebars.compile(handlebarsTemplate),
+          data = {
+            "battlerites": [{
+              "title": "Soaking Wet",
+              "imgurl": "br3 (25)",
+              "border": "c",
+              "desc": "The Silence duration from a charged Volatile Water is increased to 1.4s from 1s."
+              },
+              {
+                "title": "Splash Damage",
+                "imgurl": "br3 (25)",
+                "border": "c",
+                "desc": "Empowered Volatile Water deals splash damage and inflicts Silence on all enemies hit"
+              },
+              {
+                "title": "Ocean Tide",
+                "imgurl": "br5 (25)",
+                "border": "m",
+                "desc": "Diving into a Bubble Barrier destroys the bubble and resets the cooldown of Dive."
+              },
+              {
+                "title": "Sea Bubble",
+                "imgurl": "br8 (19)",
+                "border": "s",
+                "desc": "Tidal Wave spawns a Lesser Bubble Barrier around you when triggered."
+              },
+              {
+                "title": "Gush",
+                "imgurl": "br8 (19)",
+                "border": "c",
+                "desc": "Tidal Wave recharges your staff when triggered."
+              }
+            ]
+          }
+        $battleRites.html(templateCompile(data));
+      </script>
+       <script>
+          var $battleRites = $("#build3"),
+            handlebarsTemplate = $("#handlebars-template").html(),
+            templateCompile = Handlebars.compile(handlebarsTemplate),
+            data = {
+              "battlerites": [{
+                "title": "Rippling Waters",
+                "imgurl": "br3 (25)",
+                "border": "o",
+                "desc": "Firing Volatile Water through a Bubble Barrier increases travel distance by 25% and damage by 5."
+                },
+                {
+                  "title": "Splash Damage",
+                  "imgurl": "br3 (25)",
+                  "border": "c",
+                  "desc": "Empowered Volatile Water deals splash damage and inflicts Silence on all enemies hit"
+                },
+                {
+                  "title": "Spring Water",
+                  "imgurl": "br5 (25)",
+                  "border": "sup",
+                  "desc": "Dive heals self for 6 health and nearby allies for 18 health when emerging from the deep."
+                },
+                {
+                  "title": "Sea Bubble",
+                  "imgurl": "br8 (19)",
+                  "border": "s",
+                  "desc": "Tidal Wave spawns a Lesser Bubble Barrier around you when triggered."
+                },
+                {
+                  "title": "Gush",
+                  "imgurl": "br8 (19)",
+                  "border": "c",
+                  "desc": "Tidal Wave recharges your staff when triggered."
+                }
+              ]
+            }
+          $battleRites.html(templateCompile(data));
+        </script>
+        <script>
+            var $battleRites = $("#build4"),
+              handlebarsTemplate = $("#handlebars-template").html(),
+              templateCompile = Handlebars.compile(handlebarsTemplate),
+              data = {
+                "battlerites": [{
+                  "title": "Rippling Waters",
+                  "imgurl": "br3 (25)",
+                  "border": "o",
+                  "desc": "Firing Volatile Water through a Bubble Barrier increases travel distance by 25% and damage by 5."
+                  },
+                  {
+                    "title": "Splash Damage",
+                    "imgurl": "br3 (25)",
+                    "border": "c",
+                    "desc": "Empowered Volatile Water deals splash damage and inflicts Silence on all enemies hit"
+                  },
+                  {
+                    "title": "Gush",
+                    "imgurl": "br8 (19)",
+                    "border": "c",
+                    "desc": "Tidal Wave recharges your staff when triggered."
+                  },
+                  {
+                    "title": "Ocean Sage",
+                    "imgurl": "br3 (26)",
+                    "border": "u",
+                    "desc": "Bubble Barrier can be recast within 1.5s to spawn a Lesser Bubble Barrier."
+                  },
+                  {
+                    "title": "Sea Bubble",
+                    "imgurl": "br8 (19)",
+                    "border": "s",
+                    "desc": "Tidal Wave spawns a Lesser Bubble Barrier around you when triggered."
+                  }
+                ]
+              }
+            $battleRites.html(templateCompile(data));
+          </script>
+    <script>
+      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
+    </script>
+  </body>
+
+</html>

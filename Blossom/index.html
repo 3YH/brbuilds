@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blossom Build Guides :: Battlerite Builds</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link href="../css/jquery-ui.css" rel="stylesheet">
+  <link rel="icon" href="../img/brbuilds.ico">
+
+  <body>
+    <div class="lines-helper">
+      <div class="wrapper">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="hero-img br">
+      <div class="champimg">
+        <img src="blossom.png" alt="">
+      </div>
+      <div class="grid-container build">
+        <div class="grid-y">
+          <div class="cell buildheader">
+            <a href="../index.html">
+              <h1>Battlerite
+                <span class="lword">Builds</span>
+              </h1>
+            </a>
+            <div class="card-home">
+              <div class="topline"></div>
+              <div class="champtitle">
+                <h3>Blossom Builds</h3>
+                <span>-</span>
+                <span>The Forest Mender</span>
+              </div>
+              <div class="grid-y">
+                <div class="cell search">
+                  <img src="../img/icons/ic_search.png" alt="">
+                  <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
+                  <span id="suggestion"></span>
+                </div>
+                <div class="cell">
+                  <h3 class="mobh3">Builds:</h3>
+                  <ul class="tabs" data-tabs id="br-builds">
+                      <li class="tabs-title is-active">
+                          <a href="#panel1" aria-selected="true">Threes build by Teldo</a>
+                        </li>
+                    <li class="tabs-title">
+                      <a href="#panel2" aria-selected="true">Build by Hotbiscuit</a>
+                    </li>
+                    <li class="tabs-title">
+                      <a href="#panel3" aria-selected="true">Build by Avserse/Miniluva</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content" data-tabs-content="br-builds">
+            <div class="tabs-panel is-active" id="panel1">
+              <div class="grid-x grid-padding-x medium-up-5" id="build1">
+                <script type="text/handlebars-template" id="handlebars-template">
+                  {{#battlerites}}
+                  <div class="cell">
+                    <div class="card">
+                      <div class="card-section text-center">
+                        <h4>{{title}}</h4>
+                        <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                        <p>{{desc}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {{/battlerites}}
+                </script>
+              </div>
+              <div class="cell shrink credits">
+                <div class="card">
+                  <h4>Credits</h4>
+                  <nav class="channels channel--adsila">
+                      <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                          <span class="channel__item-name">Teldo</span>
+                          <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+                <div class="grid-x grid-padding-x medium-up-5" id="build2">
+                  <script type="text/handlebars-template" id="handlebars-template">
+                    {{#battlerites}}
+                    <div class="cell">
+                      <div class="card">
+                        <div class="card-section text-center">
+                          <h4>{{title}}</h4>
+                          <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                          <p>{{desc}}</p>
+                        </div>
+                      </div>
+                    </div>
+                    {{/battlerites}}
+                  </script>
+                </div>
+                <div class="cell shrink credits">
+                  <div class="card">
+                    <h4>Credits</h4>
+                    <nav class="channels channel--adsila">
+                      <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                        <span class="channel__item-name">Hotbiscuit</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            <div class="tabs-panel" id="panel3">
+              <div class="grid-x grid-padding-x medium-up-5" id="build3">
+                <script type="text/handlebars-template" id="handlebars-template">
+                  {{#battlerites}}
+                  <div class="cell">
+                    <div class="card">
+                      <div class="card-section text-center">
+                        <h4>{{title}}</h4>
+                        <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                        <p>{{desc}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {{/battlerites}}
+                </script>
+              </div>
+              <div class="cell shrink credits">
+                <div class="card">
+                  <h4>Credits</h4>
+                  <nav class="channels channel--adsila">
+                    <a class="channel__item" href="https://www.twitch.tv/averse">
+                      <span class="channel__item-name">Averse</span>
+                      <span class="channel__item-label">Check out his Twitch channel</span>
+                    </a>
+                    <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                      <span class="channel__item-name">Miniluva</span>
+                      <span class="channel__item-label">Check out his Twitch channel</span>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
+    <script src="../bower_components/what-input/dist/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script>
+        var $battleRites = $("#build1"),
+          handlebarsTemplate = $("#handlebars-template").html(),
+          templateCompile = Handlebars.compile(handlebarsTemplate),
+          data = {
+            "battlerites": [{
+                "title": "Powerful Pitch",
+                "imgurl": "br_1 (5)",
+                "border": "mix",
+                "desc": "Charged Thwack! deals 3 bonus damage and reduces target's damage and healing by 40% for 1.5s."
+              },
+              {
+                "title": "Hop and Skip!",
+                "imgurl": "br6 (5)",
+                "border": "m",
+                "desc": "Hop can be recast to a Lesser Hop towards target position."
+              },
+              {
+                "title": "Cautious",
+                "imgurl": "br6 (5)",
+                "border": "s",
+                "desc": "Hop invisibility duration is increased by 1s."
+              },
+              {
+                "title": "Healthful Bark",
+                "imgurl": "br_1 (6)",
+                "border": "s",
+                "desc": "Tree of Life gains 10 bonus health."
+              },
+              {
+                "title": "Spring Growth",
+                "imgurl": "br5 (6)",
+                "border": "o",
+                "desc": "Hitting an enemy with a Boom Bloom seed recharges your weapon by 50%."
+              }
+            ]
+          }
+        $battleRites.html(templateCompile(data));
+      </script>
+      <script>
+          var $battleRites = $("#build2"),
+            handlebarsTemplate = $("#handlebars-template").html(),
+            templateCompile = Handlebars.compile(handlebarsTemplate),
+            data = {
+              "battlerites": [{
+                  "title": "Weakening Pitch",
+                  "imgurl": "br_1 (5)",
+                  "border": "mix",
+                  "desc": "Charged Thwack! reduces target's damage and healing output by 40% for 1.5s."
+                },
+                {
+                  "title": "Kindhearted",
+                  "imgurl": "br3 (5)",
+                  "border": "sup",
+                  "desc": "Nourish heals for 2 bonus health when healing an ally and Butterfly heals for 2 bonus health on an ally."
+                },
+                {
+                  "title": "Hop and Skip!",
+                  "imgurl": "br6 (5)",
+                  "border": "m",
+                  "desc": "Hop can be recast to a Lesser Hop towards target position."
+                },
+                {
+                  "title": "Cautious",
+                  "imgurl": "br6 (5)",
+                  "border": "s",
+                  "desc": "Hop invisibility duration is increased by 1s."
+                },
+                {
+                  "title": "Healthful Bark",
+                  "imgurl": "br_1 (6)",
+                  "border": "s",
+                  "desc": "Tree of Life gains 10 bonus health."
+                }
+              ]
+            }
+          $battleRites.html(templateCompile(data));
+        </script>
+    <script>
+      var $battleRites = $("#build3"),
+        handlebarsTemplate = $("#handlebars-template").html(),
+        templateCompile = Handlebars.compile(handlebarsTemplate),
+        data = {
+          "battlerites": [{
+              "title": "Weakening Pitch",
+              "imgurl": "br_1 (5)",
+              "border": "mix",
+              "desc": "Charged Thwack! reduces target's damage and healing output by 40% for 1.5s."
+            },
+            {
+              "title": "Hop and Skip!",
+              "imgurl": "br6 (5)",
+              "border": "m",
+              "desc": "Hop can be recast to a Lesser Hop towards target position."
+            },
+            {
+              "title": "Healthful Bark",
+              "imgurl": "br_1 (6)",
+              "border": "s",
+              "desc": "Tree of Life gains 10 bonus health."
+            },
+            {
+              "title": "Bountiful Tree",
+              "imgurl": "br_1 (6)",
+              "border": "sup",
+              "desc": "When Tree of Life is healed by Nourish all nearby allies are healed for the same amount."
+            },
+            {
+              "title": "Spring Growth",
+              "imgurl": "br5 (6)",
+              "border": "o",
+              "desc": "Hitting an enemy with a Boom Bloom seed recharges your weapon by 50%."
+            }
+          ]
+        }
+      $battleRites.html(templateCompile(data));
+    </script>
+    <script>
+      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
+    </script>
+  </body>
+
+</html>

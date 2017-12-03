@@ -10,7 +10,8 @@
   "homepage": "http://foundation.zurb.com",
   "dependencies": {
     "foundation-sites": "~6.4.0",
-    "motion-ui": "~1.2.3"
+    "motion-ui": "~1.2.3",
+    "mustache.js": "mustache#^2.3.0"
   },
   "ignore": [
     "**/.*",

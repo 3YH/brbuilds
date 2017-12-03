@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashka Build Guides :: Battlerite Builds</title>
+  <title>Jumong Build Guides :: Battlerite Builds</title>
   <link rel="stylesheet" href="../css/app.css">
   <link href="../css/jquery-ui.css" rel="stylesheet">
   <link rel="icon" href="../img/brbuilds.ico">
@@ -23,7 +23,7 @@
 
     <div class="hero-img br">
       <div class="champimg">
-        <img src="ashka.png" alt="">
+        <img src="jumong.png" alt="">
       </div>
       <div class="grid-container build">
         <div class="grid-y">
@@ -36,9 +36,9 @@
             <div class="card-home">
               <div class="topline"></div>
               <div class="champtitle">
-                <h3>Ashka Builds</h3>
+                <h3>Jumong Builds</h3>
                 <span>-</span>
-                <span>The molten fury</span>
+                <span>The Beast Hunter</span>
               </div>
               <div class="grid-y">
                 <div class="cell search">
@@ -49,15 +49,16 @@
                 <div class="cell">
                   <h3 class="mobh3">Builds:</h3>
                   <ul class="tabs" data-tabs id="br-builds">
-                    <li class="tabs-title is-active">
-                      <a href="#panel1" aria-selected="true">Versatile build by Hotbiscuit</a>
+                      <li class="tabs-title is-active">
+                          <a href="#panel1" aria-selected="true">Build by Avserse/Miniluva</a>
+                        </li>
+                    <li class="tabs-title">
+                      <a href="#panel2" aria-selected="true">Build by Hotbiscuit</a>
                     </li>
                     <li class="tabs-title">
-                      <a href="#panel2" aria-selected="true">vs 2 Melee by Hotbiscuit</a>
+                      <a href="#panel3" aria-selected="true">Versatile build by Teldo</a>
                     </li>
-                    <li class="tabs-title">
-                      <a href="#panel3" aria-selected="true">Build by Avserse/Miniluva</a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -84,11 +85,15 @@
                 <div class="card">
                   <h4>Credits</h4>
                   <nav class="channels channel--adsila">
-                    <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
-                      <span class="channel__item-name">Hotbiscuit</span>
-                      <span class="channel__item-label">Check out his Twitch channel</span>
-                    </a>
-                  </nav>
+                      <a class="channel__item" href="https://www.twitch.tv/averse">
+                        <span class="channel__item-name">Averse</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                      <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                        <span class="channel__item-name">Miniluva</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
                 </div>
               </div>
             </div>
@@ -140,15 +145,11 @@
                     <div class="card">
                       <h4>Credits</h4>
                       <nav class="channels channel--adsila">
-                          <a class="channel__item" href="https://www.twitch.tv/averse">
-                            <span class="channel__item-name">Averse</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
+                          <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                              <span class="channel__item-name">Teldo</span>
+                              <span class="channel__item-label">Check out his Twitch channel</span>
                           </a>
-                          <a class="channel__item" href="https://www.twitch.tv/miniluva">
-                            <span class="channel__item-name">Miniluva</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                        </nav>
+                      </nav>
                     </div>
                   </div>
                 </div>
@@ -168,34 +169,34 @@
         templateCompile = Handlebars.compile(handlebarsTemplate),
         data = {
           "battlerites": [{
-              "title": "Heat",
-              "imgurl": "br_1 (2)",
-              "border": "m",
-              "desc": "Fire Storm can be cast while moving at 50% movement speed and 30% while channeling."
+              "title": "Perfect Shot",
+              "imgurl": "br_1 (19)",
+              "border": "c",
+              "desc": "Steady Shot stuns the enemy for 0.5s."
             },
             {
-              "title": "Burning Feet",
-              "imgurl": "br4 (2)",
-              "border": "m",
-              "desc": "Searing Flight increases movement speed by 40% for 2s."
-            },
-            {
-              "title": "Conflagration",
-              "imgurl": "br5 (46)",
+              "title": "Arrow Storm",
+              "imgurl": "br8 (14)",
               "border": "o",
-              "desc": "Fireballs travelling through Firewall turn into Fire Storm bolts."
+              "desc": "Increases the radius of Rain of Arrows by 15% and damage by 4."
             },
             {
-              "title": "Inspiration",
-              "imgurl": "br5 (42)",
-              "border": "u",
-              "desc": "Increases your maximum energy by 25% and energy gained from abilities is increased by 10%."
-            },
-            {
-              "title": "Magma",
-              "imgurl": "br8 (32)",
+              "title": "Deadly Trap",
+              "imgurl": "br2 (20)",
               "border": "o",
-              "desc": "Ignite deals 4 bonus damage and reduces targets movement speed by 10%."
+              "desc": "Your projectiles deal 4 more damage to enemies hit by Bear Trap for 2s."
+            },
+            {
+              "title": "Trapper",
+              "imgurl": "br2 (20)",
+              "border": "c",
+              "desc": "Deploy one additional Bear Trap in front of the first one."
+            },
+            {
+              "title": "Death Mark",
+              "imgurl": "br8 (15)",
+              "border": "o",
+              "desc": "Consuming Seekers Mark deals 4 bonus damage."
             }
           ]
         }
@@ -207,34 +208,34 @@
           templateCompile = Handlebars.compile(handlebarsTemplate),
           data = {
             "battlerites": [{
-                "title": "Heat",
-                "imgurl": "br_1 (2)",
-                "border": "m",
-                "desc": "Fire Storm can be cast while moving at 50% movement speed and 30% while channeling."
-              },
-              {
-                "title": "Blaze",
-                "imgurl": "br4 (2)",
+                "title": "Power Shot",
+                "imgurl": "br_1 (19)",
                 "border": "o",
-                "desc": "Your next fireball after using Searing Flight deals 2 bonus damage and inflicts Ignite."
+                "desc": "Steady Shot deals 6 bonus damage and knocks target back."
               },
               {
-                "title": "Burning Feet",
-                "imgurl": "br4 (2)",
+                "title": "Viper",
+                "imgurl": "br6 (18)",
                 "border": "m",
-                "desc": "Searing Flight increases movement speed by 40% for 2s."
+                "desc": "Black Arrow grants a 50% Fading Haste that lasts for 1.5s."
               },
               {
-                "title": "Inspiration",
-                "imgurl": "br5 (42)",
-                "border": "u",
-                "desc": "Increases your maximum energy by 25% and energy gained from abilities is increased by 10%."
+                "title": "Arrow Storm",
+                "imgurl": "br8 (14)",
+                "border": "o",
+                "desc": "Increases the radius of Rain of Arrows by 15% and damage by 4."
               },
               {
-                "title": "Lava Punch",
-                "imgurl": "br4 (46)",
-                "border": "c",
-                "desc": "Molten Fist cooldown is reduced by 1.5s and hitting an enemy further reduces the cooldown by 1.5s."
+                "title": "Panther",
+                "imgurl": "br5 (20)",
+                "border": "m",
+                "desc": "Prowl duration is increased by 0.5s and cooldown is reduced by 3s."
+              },
+              {
+                "title": "Death Mark",
+                "imgurl": "br8 (15)",
+                "border": "o",
+                "desc": "Consuming Seekers Mark deals 4 bonus damage."
               }
             ]
           }
@@ -246,34 +247,34 @@
             templateCompile = Handlebars.compile(handlebarsTemplate),
             data = {
               "battlerites": [{
-                  "title": "Heat",
-                  "imgurl": "br_1 (2)",
+                "title": "Viper",
+                "imgurl": "br6 (18)",
+                "border": "m",
+                "desc": "Black Arrow grants a 50% Fading Haste that lasts for 1.5s."
+                },
+                {
+                  "title": "Deadly Trap",
+                  "imgurl": "br2 (20)",
+                  "border": "o",
+                  "desc": "Your projectiles deal 4 more damage to enemies hit by Bear Trap for 2s."
+                },
+                {
+                  "title": "Death Mark",
+                  "imgurl": "br8 (15)",
+                  "border": "o",
+                  "desc": "Consuming Seekers Mark deals 4 bonus damage."
+                },
+                {
+                  "title": "Trapper",
+                  "imgurl": "br2 (20)",
+                  "border": "c",
+                  "desc": "Deploy one additional Bear Trap in front of the first one."
+                },
+                {
+                  "title": "Panther",
+                  "imgurl": "br5 (20)",
                   "border": "m",
-                  "desc": "Fire Storm can be cast while moving at 50% movement speed and 30% while channeling."
-                },
-                {
-                  "title": "Wild Fire",
-                  "imgurl": "br_1 (2)",
-                  "border": "o",
-                  "desc": "Fire Storm launches 1 additional projectile but cooldown increases by 1s."
-                },
-                {
-                  "title": "Burning Feet",
-                  "imgurl": "br4 (2)",
-                  "border": "m",
-                  "desc": "Searing Flight increases movement speed by 40% for 2s."
-                },
-                {
-                  "title": "Blaze",
-                  "imgurl": "br4 (2)",
-                  "border": "o",
-                  "desc": "Your next fireball after using Searing Flight deals 2 bonus damage and inflicts Ignite."
-                },
-                {
-                  "title": "Magma",
-                  "imgurl": "br8 (32)",
-                  "border": "o",
-                  "desc": "Ignite deals 4 bonus damage and reduces targets movement speed by 10%."
+                  "desc": "Prowl duration is increased by 0.5s and cooldown is reduced by 3s."
                 }
               ]
             }
