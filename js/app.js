@@ -9,14 +9,13 @@ $(document).ready(function(){
     
         function doSearch() {
             var value = $(search).val();
-            window.location.href = value ;
-
-            // var split_url = value.split('/');
-            // if (split_url.length > 2) {
-            //     window.location.href = '../' + value;
-            // } else {
-            //     window.location.href = value ;
-            // }
+            
+            var split_url = value.split('/');
+            if (split_url.length = 1) {
+                window.location.href = '../' + value;
+            } else {
+                window.location.href = value ;
+            }
         }
         
     
