@@ -2,308 +2,321 @@
 <html class="no-js" lang="en">
 
 <head>
+  <meta property="og:title" content="Battlerite Builds" />
+  <meta property="og:description" content="brbuilds.info - All builds by Battlerite pros in one place!" />
+  <meta property="og:url" content="brbuilds.info" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@battlerite" />
+  <meta property="og:image" content="https://i.imgur.com/EJkjP01.png" />
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oldur Build Guides :: Battlerite Builds</title>
   <link rel="stylesheet" href="../css/app.css">
-  <link href="../css/jquery-ui.css" rel="stylesheet">
+  <link href="../css/jquery-ui.min.css" rel="stylesheet">
   <link rel="icon" href="../img/brbuilds.ico">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66400206-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
-  
+
     gtag('config', 'UA-66400206-3');
   </script>
-  </head>
-  <body>
-    <div class="lines-helper">
-      <div class="wrapper">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </div>
+</head>
 
-    <div class="hero-img br">
-      <div class="champimg">
-        <img src="oldur.png" alt="">
-      </div>
-      <div class="grid-container build">
-        <div class="grid-y">
-          <div class="cell buildheader">
-            <a href="../index.html">
-              <h1>Battlerite
-                <span class="lword">Builds</span>
-              </h1>
-            </a>
-            <div class="card-home">
-              <div class="topline"></div>
-              <div class="champtitle">
-                <h3>Oldur Builds</h3>
-                <span>-</span>
-                <span>The Time Mender</span>
+<body>
+  <div class="lines-helper">
+    <div class="wrapper">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="hero-img br">
+    <div class="champimg">
+      <img src="oldur.png" alt="">
+    </div>
+    <div class="grid-container build">
+      <div class="grid-y">
+        <div class="cell buildheader">
+          <a href="../index.html">
+            <h1>Battlerite
+              <span class="lword">Builds</span>
+            </h1>
+          </a>
+          <div class="card-home">
+            <div class="topline"></div>
+            <div class="champtitle">
+              <h3>Oldur Builds</h3>
+              <span>-</span>
+              <span>The Time Mender</span>
+            </div>
+            <div class="grid-y">
+              <div class="cell search">
+                <img src="../img/icons/ic_search.png" alt="">
+                <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
+                <span id="suggestion"></span>
               </div>
-              <div class="grid-y">
-                <div class="cell search">
-                  <img src="../img/icons/ic_search.png" alt="">
-                  <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
-                  <span id="suggestion"></span>
-                </div>
-                <div class="cell">
-                  <h3 class="mobh3">Builds:</h3>
-                  <ul class="tabs" data-tabs id="br-builds">
-                    <li class="tabs-title is-active">
-                      <a href="#panel1" aria-selected="true">Allround build by Teldo</a>
-                    </li>
-                    <li class="tabs-title">
-                      <a href="#panel2" aria-selected="true">Build by Avserse/Miniluva</a>
-                    </li>
-                    <li class="tabs-title">
-                        <a href="#panel3" aria-selected="true">Build by Hotbiscuit</a>
-                      </li>
-                  </ul>
-                </div>
+              <div class="cell">
+                <h3 class="mobh3">Builds:</h3>
+                <ul class="tabs" data-tabs id="br-builds">
+                  <li class="tabs-title is-active">
+                    <a href="#panel1" aria-selected="true">Allround build by Teldo</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel2" aria-selected="true">Build by Avserse/Miniluva</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel3" aria-selected="true">Build by Hotbiscuit</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="tabs-content" data-tabs-content="br-builds">
-            <div class="tabs-panel is-active" id="panel1">
-              <div class="grid-x grid-padding-x medium-up-5" id="build1">
-                <script type="text/handlebars-template" id="handlebars-template">
-                  {{#battlerites}}
-                      <div class="cell">
-                        <div class="card">
-                          <div class="card-section text-center">
-                            <h4>{{title}}</h4>
-                            <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                            <p>{{desc}}</p>
-                          </div>
-                        </div>
-                      </div>   
-                  {{/battlerites}}
-                  </script>
-              </div>
-              <div class="cell shrink credits">
-                <div class="card">
-                  <h4>Credits</h4>
-                  <nav class="channels channel--adsila">
-                      <a class="channel__item" href="https://www.twitch.tv/teldoo">
-                          <span class="channel__item-name">Teldo</span>
-                          <span class="channel__item-label">Check out his Twitch channel</span>
-                      </a>
-                  </nav>
+        </div>
+        <div class="tabs-content" data-tabs-content="br-builds">
+          <div class="tabs-panel is-active" id="panel1">
+            <div class="grid-x grid-padding-x medium-up-5" id="build1">
+              <script type="text/handlebars-template" id="handlebars-template">
+                {{#battlerites}}
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section text-center">
+                      <h4>{{title}}</h4>
+                      <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                      <p>{{desc}}</p>
+                    </div>
+                  </div>
                 </div>
+                {{/battlerites}}
+              </script>
+            </div>
+            <div class="cell shrink credits">
+              <div class="card">
+                <h4>Credits</h4>
+                <nav class="channels channel--adsila">
+                  <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                    <span class="channel__item-name">Teldo</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                </nav>
               </div>
             </div>
-              <div class="tabs-panel" id="panel2">
-                  <div class="grid-x grid-padding-x medium-up-5" id="build2">
-                    <script type="text/handlebars-template" id="handlebars-template">
-                      {{#battlerites}}
-                          <div class="cell">
-                            <div class="card">
-                              <div class="card-section text-center">
-                                <h4>{{title}}</h4>
-                                <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                                <p>{{desc}}</p>
-                              </div>
-                            </div>
-                          </div>   
-                      {{/battlerites}}
-                      </script>
-                  </div>
-                  <div class="cell shrink credits">
-                    <div class="card">
-                      <h4>Credits</h4>
-                      <nav class="channels channel--adsila">
-                          <a class="channel__item" href="https://www.twitch.tv/averse">
-                            <span class="channel__item-name">Averse</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                          <a class="channel__item" href="https://www.twitch.tv/miniluva">
-                            <span class="channel__item-name">Miniluva</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                        </nav>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <div class="grid-x grid-padding-x medium-up-5" id="build2">
+              <script type="text/handlebars-template" id="handlebars-template">
+                {{#battlerites}}
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section text-center">
+                      <h4>{{title}}</h4>
+                      <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                      <p>{{desc}}</p>
                     </div>
                   </div>
                 </div>
-                <div class="tabs-panel" id="panel3">
-                    <div class="grid-x grid-padding-x medium-up-5" id="build3">
-                      <script type="text/handlebars-template" id="handlebars-template">
-                        {{#battlerites}}
-                            <div class="cell">
-                              <div class="card">
-                                <div class="card-section text-center">
-                                  <h4>{{title}}</h4>
-                                  <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                                  <p>{{desc}}</p>
-                                </div>
-                              </div>
-                            </div>   
-                        {{/battlerites}}
-                        </script>
-                    </div>
-                    <div class="cell shrink credits">
-                      <div class="card">
-                        <h4>Credits</h4>
-                        <nav class="channels channel--adsila">
-                          <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
-                            <span class="channel__item-name">Hotbiscuit</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                        </nav>
-                      </div>
+                {{/battlerites}}
+              </script>
+            </div>
+            <div class="cell shrink credits">
+              <div class="card">
+                <h4>Credits</h4>
+                <nav class="channels channel--adsila">
+                  <a class="channel__item" href="https://www.twitch.tv/averse">
+                    <span class="channel__item-name">Averse</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                  <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                    <span class="channel__item-name">Miniluva</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <div class="grid-x grid-padding-x medium-up-5" id="build3">
+              <script type="text/handlebars-template" id="handlebars-template">
+                {{#battlerites}}
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section text-center">
+                      <h4>{{title}}</h4>
+                      <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                      <p>{{desc}}</p>
                     </div>
                   </div>
+                </div>
+                {{/battlerites}}
+              </script>
+            </div>
+            <div class="cell shrink credits">
+              <div class="card">
+                <h4>Credits</h4>
+                <nav class="channels channel--adsila">
+                  <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                    <span class="channel__item-name">Hotbiscuit</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer grid-x brf">
-        <div class="update">
-        </div>
-        <div class="copyright">
-        <span>All content Battlerite / Stunlock Studios ©2017</span>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="NTXHCVWM2U59A">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
-      </div>
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
-    <script src="../bower_components/what-input/dist/what-input.min.js"></script>
-    <script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/handlebars-v4.0.11.js"></script>
-    <script>
-      var $battleRites = $("#build1"),
-        handlebarsTemplate = $("#handlebars-template").html(),
-        templateCompile = Handlebars.compile(handlebarsTemplate),
-        data = {
-          "battlerites": [{
+  </div>
+  <div class="footer grid-x brf">
+    <div class="update">
+    </div>
+    <div class="copyright">
+      <span>All content Battlerite / Stunlock Studios ©2017</span>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="NTXHCVWM2U59A">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
+  <script src="../bower_components/what-input/dist/what-input.min.js"></script>
+  <script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+  <script src="../js/app.min.js"></script>
+  <script src="../js/handlebars-v4.0.11.min.js"></script>
+  <script>
+    var $battleRites = $("#build1"),
+      handlebarsTemplate = $("#handlebars-template").html(),
+      templateCompile = Handlebars.compile(handlebarsTemplate),
+      data = {
+        "battlerites": [{
             "title": "Dehydration",
             "imgurl": "br_1 (23)",
             "border": "mix",
             "desc": "Time Bomb reduces incoming healing by 20% and outgoing damage by 10%."
-            },
-            {
-              "title": "Renew",
-              "imgurl": "br3 (23)",
-              "border": "sup",
-              "desc": "Rejuvenating Sand applies a Renew effect healing the target for 6 health after 3.5s."
-            },
-            {
-              "title": "Time Burst",
-              "imgurl": "br5 (24)",
-              "border": "o",
-              "desc": "Consuming Time Bomb with Quicksand deals 6 bonus damage."
-            },
-            {
-              "title": "Recreate",
-              "imgurl": "br5 (23)",
-              "border": "sup",
-              "desc": "Travelling through an ally with Shifting Sands grants the ally a Shield absorbing 16 damage lasting up to 3s."
-            },
-            {
-              "title": "Chrono Shift",
-              "imgurl": "br5 (23)",
-              "border": "mix",
-              "desc": "Shifting Sands creates a Lesser Chronoflux that reflects projectiles and slows movement speed."
-            }
-          ]
-        }
-      $battleRites.html(templateCompile(data));
-    </script>
-    <script>
-        var $battleRites = $("#build2"),
-          handlebarsTemplate = $("#handlebars-template").html(),
-          templateCompile = Handlebars.compile(handlebarsTemplate),
-          data = {
-            "battlerites": [{
-              "title": "Shared Fate",
-              "imgurl": "br_1 (23)",
-              "border": "o",
-              "desc": "Time Bomb deals 2 bonus damage and explodes dealing area damage when the effect ends."
-              },
-              {
-                "title": "Dehydration",
-                "imgurl": "br_1 (23)",
-                "border": "mix",
-                "desc": "Time Bomb reduces incoming healing by 20% and outgoing damage by 10%."
-              },
-              {
-                "title": "Renew",
-                "imgurl": "br3 (23)",
-                "border": "sup",
-                "desc": "Rejuvenating Sand applies a Renew effect healing the target for 6 health after 3.5s."
-              },
-              {
-                "title": "Sand Tomb",
-                "imgurl": "br5 (24)",
-                "border": "c",
-                "desc": "Quicksand inflicts a 1s Root."
-              },
-              {
-                "title": "Time Burst",
-                "imgurl": "br5 (24)",
-                "border": "o",
-                "desc": "Consuming Time Bomb with Quicksand deals 6 bonus damage."
-              }
-            ]
+          },
+          {
+            "title": "Renew",
+            "imgurl": "br3 (23)",
+            "border": "sup",
+            "desc": "Rejuvenating Sand applies a Renew effect healing the target for 6 health after 3.5s."
+          },
+          {
+            "title": "Time Burst",
+            "imgurl": "br5 (24)",
+            "border": "o",
+            "desc": "Consuming Time Bomb with Quicksand deals 6 bonus damage."
+          },
+          {
+            "title": "Recreate",
+            "imgurl": "br5 (23)",
+            "border": "sup",
+            "desc": "Travelling through an ally with Shifting Sands grants the ally a Shield absorbing 16 damage lasting up to 3s."
+          },
+          {
+            "title": "Chrono Shift",
+            "imgurl": "br5 (23)",
+            "border": "mix",
+            "desc": "Shifting Sands creates a Lesser Chronoflux that reflects projectiles and slows movement speed."
           }
-        $battleRites.html(templateCompile(data));
-      </script>
-       <script>
-          var $battleRites = $("#build3"),
-            handlebarsTemplate = $("#handlebars-template").html(),
-            templateCompile = Handlebars.compile(handlebarsTemplate),
-            data = {
-              "battlerites": [{
-                "title": "Shared Fate",
-                "imgurl": "br_1 (23)",
-                "border": "o",
-                "desc": "Time Bomb deals 2 bonus damage and explodes dealing area damage when the effect ends."
-                },
-                {
-                  "title": "Dehydration",
-                  "imgurl": "br_1 (23)",
-                  "border": "mix",
-                  "desc": "Time Bomb reduces incoming healing by 20% and outgoing damage by 10%."
-                },
-                {
-                  "title": "Renew",
-                  "imgurl": "br3 (23)",
-                  "border": "sup",
-                  "desc": "Rejuvenating Sand applies a Renew effect healing the target for 6 health after 3.5s."
-                },
-                {
-                  "title": "Chrono Shift",
-                  "imgurl": "br5 (23)",
-                  "border": "mix",
-                  "desc": "Shifting Sands creates a Lesser Chronoflux that reflects projectiles and slows movement speed."
-                },
-                {
-                  "title": "Sand Struck",
-                  "imgurl": "br5 (24)",
-                  "border": "o",
-                  "desc": "Quicksand can be recast to throw a Lesser Quicksand with half the effect, that applies Time Bomb instead of consuming it."
-                }
-              ]
-            }
-          $battleRites.html(templateCompile(data));
-        </script>
-    <script>
-      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
-    </script>
-  </body>
+        ]
+      }
+    $battleRites.html(templateCompile(data));
+  </script>
+  <script>
+    var $battleRites = $("#build2"),
+      handlebarsTemplate = $("#handlebars-template").html(),
+      templateCompile = Handlebars.compile(handlebarsTemplate),
+      data = {
+        "battlerites": [{
+            "title": "Shared Fate",
+            "imgurl": "br_1 (23)",
+            "border": "o",
+            "desc": "Time Bomb deals 2 bonus damage and explodes dealing area damage when the effect ends."
+          },
+          {
+            "title": "Dehydration",
+            "imgurl": "br_1 (23)",
+            "border": "mix",
+            "desc": "Time Bomb reduces incoming healing by 20% and outgoing damage by 10%."
+          },
+          {
+            "title": "Renew",
+            "imgurl": "br3 (23)",
+            "border": "sup",
+            "desc": "Rejuvenating Sand applies a Renew effect healing the target for 6 health after 3.5s."
+          },
+          {
+            "title": "Sand Tomb",
+            "imgurl": "br5 (24)",
+            "border": "c",
+            "desc": "Quicksand inflicts a 1s Root."
+          },
+          {
+            "title": "Time Burst",
+            "imgurl": "br5 (24)",
+            "border": "o",
+            "desc": "Consuming Time Bomb with Quicksand deals 6 bonus damage."
+          }
+        ]
+      }
+    $battleRites.html(templateCompile(data));
+  </script>
+  <script>
+    var $battleRites = $("#build3"),
+      handlebarsTemplate = $("#handlebars-template").html(),
+      templateCompile = Handlebars.compile(handlebarsTemplate),
+      data = {
+        "battlerites": [{
+            "title": "Shared Fate",
+            "imgurl": "br_1 (23)",
+            "border": "o",
+            "desc": "Time Bomb deals 2 bonus damage and explodes dealing area damage when the effect ends."
+          },
+          {
+            "title": "Dehydration",
+            "imgurl": "br_1 (23)",
+            "border": "mix",
+            "desc": "Time Bomb reduces incoming healing by 20% and outgoing damage by 10%."
+          },
+          {
+            "title": "Renew",
+            "imgurl": "br3 (23)",
+            "border": "sup",
+            "desc": "Rejuvenating Sand applies a Renew effect healing the target for 6 health after 3.5s."
+          },
+          {
+            "title": "Chrono Shift",
+            "imgurl": "br5 (23)",
+            "border": "mix",
+            "desc": "Shifting Sands creates a Lesser Chronoflux that reflects projectiles and slows movement speed."
+          },
+          {
+            "title": "Sand Struck",
+            "imgurl": "br5 (24)",
+            "border": "o",
+            "desc": "Quicksand can be recast to throw a Lesser Quicksand with half the effect, that applies Time Bomb instead of consuming it."
+          }
+        ]
+      }
+    $battleRites.html(templateCompile(data));
+  </script>
+  <script>
+    var characterJson = ["Bakko", "Croak", "Freya", "Raigon", "Rook", "Ruh Kaan", "Shifu", "Thorn", "Ashka", "Destiny",
+      "Ezmo", "Iva", "Jade", "Jumong", "Taya", "Varesh", "Blossom", "Lucie", "Oldur", "Pearl", "Pestilus", "Poloma",
+      "Sirius", "Alysia"
+    ];
+  </script>
+</body>
 
 </html>

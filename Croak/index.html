@@ -2,22 +2,31 @@
 <html class="no-js" lang="en">
 
 <head>
+    <meta property="og:title" content="Battlerite Builds" />
+    <meta property="og:description" content="brbuilds.info - All builds by Battlerite pros in one place!" />
+    <meta property="og:url" content="brbuilds.info" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@battlerite" />
+    <meta property="og:image" content="https://i.imgur.com/EJkjP01.png" />
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Croak Build Guides :: Battlerite Builds</title>
     <link rel="stylesheet" href="../css/app.css">
-    <link href="../css/jquery-ui.css" rel="stylesheet">
+    <link href="../css/jquery-ui.min.css" rel="stylesheet">
     <link rel="icon" href="../img/brbuilds.ico">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66400206-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-66400206-3');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66400206-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-66400206-3');
+    </script>
 </head>
 
 <body>
@@ -167,24 +176,24 @@
         </div>
     </div>
     <div class="footer grid-x brf">
-            <div class="update">
-            </div>
-            <div class="copyright">
+        <div class="update">
+        </div>
+        <div class="copyright">
             <span>All content Battlerite / Stunlock Studios ©2017</span>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="NTXHCVWM2U59A">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </div>
-          </div>
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="NTXHCVWM2U59A">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+    </div>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
     <script src="../bower_components/what-input/dist/what-input.min.js"></script>
     <script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script src="../js/app.min.js"></script>
+    <script src="../js/handlebars-v4.0.11.min.js"></script>
     <script>
         var $battleRites = $("#build1"),
             handlebarsTemplate = $("#handlebars-template").html(),
@@ -303,7 +312,10 @@
         $battleRites.html(templateCompile(data));
     </script>
     <script>
-      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
+        var characterJson = ["Bakko", "Croak", "Freya", "Raigon", "Rook", "Ruh Kaan", "Shifu", "Thorn", "Ashka",
+            "Destiny", "Ezmo", "Iva", "Jade", "Jumong", "Taya", "Varesh", "Blossom", "Lucie", "Oldur", "Pearl",
+            "Pestilus", "Poloma", "Sirius", "Alysia"
+        ];
     </script>
 
 </body>

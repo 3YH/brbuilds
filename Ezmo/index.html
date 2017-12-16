@@ -2,308 +2,321 @@
 <html class="no-js" lang="en">
 
 <head>
+  <meta property="og:title" content="Battlerite Builds" />
+  <meta property="og:description" content="brbuilds.info - All builds by Battlerite pros in one place!" />
+  <meta property="og:url" content="brbuilds.info" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@battlerite" />
+  <meta property="og:image" content="https://i.imgur.com/EJkjP01.png" />
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ezmo Build Guides :: Battlerite Builds</title>
   <link rel="stylesheet" href="../css/app.css">
-  <link href="../css/jquery-ui.css" rel="stylesheet">
+  <link href="../css/jquery-ui.min.css" rel="stylesheet">
   <link rel="icon" href="../img/brbuilds.ico">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66400206-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
-  
+
     gtag('config', 'UA-66400206-3');
   </script>
-  </head>
-  <body>
-    <div class="lines-helper">
-      <div class="wrapper">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </div>
+</head>
 
-    <div class="hero-img br">
-      <div class="champimg">
-        <img src="ezmo.png" alt="">
-      </div>
-      <div class="grid-container build">
-        <div class="grid-y">
-          <div class="cell buildheader">
-            <a href="../index.html">
-              <h1>Battlerite
-                <span class="lword">Builds</span>
-              </h1>
-            </a>
-            <div class="card-home">
-              <div class="topline"></div>
-              <div class="champtitle">
-                <h3>Ezmo Builds</h3>
-                <span>-</span>
-                <span>The Mischievous</span>
+<body>
+  <div class="lines-helper">
+    <div class="wrapper">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="hero-img br">
+    <div class="champimg">
+      <img src="ezmo.png" alt="">
+    </div>
+    <div class="grid-container build">
+      <div class="grid-y">
+        <div class="cell buildheader">
+          <a href="../index.html">
+            <h1>Battlerite
+              <span class="lword">Builds</span>
+            </h1>
+          </a>
+          <div class="card-home">
+            <div class="topline"></div>
+            <div class="champtitle">
+              <h3>Ezmo Builds</h3>
+              <span>-</span>
+              <span>The Mischievous</span>
+            </div>
+            <div class="grid-y">
+              <div class="cell search">
+                <img src="../img/icons/ic_search.png" alt="">
+                <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
+                <span id="suggestion"></span>
               </div>
-              <div class="grid-y">
-                <div class="cell search">
-                  <img src="../img/icons/ic_search.png" alt="">
-                  <input type="search" id="char-name" battlerites="Search champion" maxlength="30" />
-                  <span id="suggestion"></span>
-                </div>
-                <div class="cell">
-                  <h3 class="mobh3">Builds:</h3>
-                  <ul class="tabs" data-tabs id="br-builds">
-                    <li class="tabs-title is-active">
-                      <a href="#panel1" aria-selected="true">Build by Hotbiscuit</a>
-                    </li>
-                    <li class="tabs-title">
-                      <a href="#panel2" aria-selected="true">Allround build by Teldo</a>
-                    </li>
-                    <li class="tabs-title">
-                      <a href="#panel3" aria-selected="true">Build by Avserse/Miniluva</a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="cell">
+                <h3 class="mobh3">Builds:</h3>
+                <ul class="tabs" data-tabs id="br-builds">
+                  <li class="tabs-title is-active">
+                    <a href="#panel1" aria-selected="true">Build by Hotbiscuit</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel2" aria-selected="true">Allround build by Teldo</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel3" aria-selected="true">Build by Avserse/Miniluva</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="tabs-content" data-tabs-content="br-builds">
-            <div class="tabs-panel is-active" id="panel1">
-              <div class="grid-x grid-padding-x medium-up-5" id="build1">
-                <script type="text/handlebars-template" id="handlebars-template">
-                  {{#battlerites}}
-                      <div class="cell">
-                        <div class="card">
-                          <div class="card-section text-center">
-                            <h4>{{title}}</h4>
-                            <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                            <p>{{desc}}</p>
-                          </div>
-                        </div>
-                      </div>   
-                  {{/battlerites}}
-                  </script>
-              </div>
-              <div class="cell shrink credits">
-                <div class="card">
-                  <h4>Credits</h4>
-                  <nav class="channels channel--adsila">
-                    <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
-                      <span class="channel__item-name">Hotbiscuit</span>
-                      <span class="channel__item-label">Check out his Twitch channel</span>
-                    </a>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div class="tabs-panel" id="panel2">
-                <div class="grid-x grid-padding-x medium-up-5" id="build2">
-                  <script type="text/handlebars-template" id="handlebars-template">
-                    {{#battlerites}}
-                        <div class="cell">
-                          <div class="card">
-                            <div class="card-section text-center">
-                              <h4>{{title}}</h4>
-                              <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                              <p>{{desc}}</p>
-                            </div>
-                          </div>
-                        </div>   
-                    {{/battlerites}}
-                    </script>
-                </div>
-                <div class="cell shrink credits">
+        </div>
+        <div class="tabs-content" data-tabs-content="br-builds">
+          <div class="tabs-panel is-active" id="panel1">
+            <div class="grid-x grid-padding-x medium-up-5" id="build1">
+              <script type="text/handlebars-template" id="handlebars-template">
+                {{#battlerites}}
+                <div class="cell">
                   <div class="card">
-                    <h4>Credits</h4>
-                    <nav class="channels channel--adsila">
-                      <a class="channel__item" href="https://www.twitch.tv/teldoo">
-                          <span class="channel__item-name">Teldo</span>
-                          <span class="channel__item-label">Check out his Twitch channel</span>
-                      </a>
-                  </nav>
-                  </div>
-                </div>
-              </div>
-              <div class="tabs-panel" id="panel3">
-                  <div class="grid-x grid-padding-x medium-up-5" id="build3">
-                    <script type="text/handlebars-template" id="handlebars-template">
-                      {{#battlerites}}
-                          <div class="cell">
-                            <div class="card">
-                              <div class="card-section text-center">
-                                <h4>{{title}}</h4>
-                                <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
-                                <p>{{desc}}</p>
-                              </div>
-                            </div>
-                          </div>   
-                      {{/battlerites}}
-                      </script>
-                  </div>
-                  <div class="cell shrink credits">
-                    <div class="card">
-                      <h4>Credits</h4>
-                      <nav class="channels channel--adsila">
-                          <a class="channel__item" href="https://www.twitch.tv/averse">
-                            <span class="channel__item-name">Averse</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                          <a class="channel__item" href="https://www.twitch.tv/miniluva">
-                            <span class="channel__item-name">Miniluva</span>
-                            <span class="channel__item-label">Check out his Twitch channel</span>
-                          </a>
-                        </nav>
+                    <div class="card-section text-center">
+                      <h4>{{title}}</h4>
+                      <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                      <p>{{desc}}</p>
                     </div>
                   </div>
                 </div>
+                {{/battlerites}}
+              </script>
+            </div>
+            <div class="cell shrink credits">
+              <div class="card">
+                <h4>Credits</h4>
+                <nav class="channels channel--adsila">
+                  <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                    <span class="channel__item-name">Hotbiscuit</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <div class="grid-x grid-padding-x medium-up-5" id="build2">
+              <script type="text/handlebars-template" id="handlebars-template">
+                {{#battlerites}}
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section text-center">
+                      <h4>{{title}}</h4>
+                      <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                      <p>{{desc}}</p>
+                    </div>
+                  </div>
+                </div>
+                {{/battlerites}}
+              </script>
+            </div>
+            <div class="cell shrink credits">
+              <div class="card">
+                <h4>Credits</h4>
+                <nav class="channels channel--adsila">
+                  <a class="channel__item" href="https://www.twitch.tv/teldoo">
+                    <span class="channel__item-name">Teldo</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <div class="grid-x grid-padding-x medium-up-5" id="build3">
+              <script type="text/handlebars-template" id="handlebars-template">
+                {{#battlerites}}
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section text-center">
+                      <h4>{{title}}</h4>
+                      <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                      <p>{{desc}}</p>
+                    </div>
+                  </div>
+                </div>
+                {{/battlerites}}
+              </script>
+            </div>
+            <div class="cell shrink credits">
+              <div class="card">
+                <h4>Credits</h4>
+                <nav class="channels channel--adsila">
+                  <a class="channel__item" href="https://www.twitch.tv/averse">
+                    <span class="channel__item-name">Averse</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                  <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                    <span class="channel__item-name">Miniluva</span>
+                    <span class="channel__item-label">Check out his Twitch channel</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer grid-x brf">
-        <div class="update">
-        </div>
-        <div class="copyright">
-        <span>All content Battlerite / Stunlock Studios ©2017</span>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="NTXHCVWM2U59A">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
-      </div>
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
-    <script src="../bower_components/what-input/dist/what-input.min.js"></script>
-    <script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/handlebars-v4.0.11.js"></script>
-    <script>
-      var $battleRites = $("#build1"),
-        handlebarsTemplate = $("#handlebars-template").html(),
-        templateCompile = Handlebars.compile(handlebarsTemplate),
-        data = {
-          "battlerites": [{
-              "title": "Warlock's Grip",
-              "imgurl": "br2 (11)",
-              "border": "u",
-              "desc": "Increases the range of Chaos Grip by 25%."
-            },
-            {
-              "title": "Disruption",
-              "imgurl": "br2 (11)",
-              "border": "c",
-              "desc": "Chaos Grip inflicts Silence on target hit for 0.4s to 0.8s depending on charge-up."
-            },
-            {
-              "title": "Wreak Havoc",
-              "imgurl": "br5 (11)",
-              "border": "o",
-              "desc": "Displace increases your Arcane Fire attack speed by 30% for 2.5s."
-            },
-            {
-              "title": "Whizz",
-              "imgurl": "br5 (11)",
-              "border": "m",
-              "desc": "Using Displace grants a 60% fading haste that lasts for 2s."
-            },
-            {
-              "title": "Grimoire of Death",
-              "imgurl": "br7 (9)",
-              "border": "o",
-              "desc": "Grimoire of Chaos has 40% increased pull force and deals 10 additional damage."
-            }
-          ]
-        }
-      $battleRites.html(templateCompile(data));
-    </script>
-    <script>
-        var $battleRites = $("#build2"),
-          handlebarsTemplate = $("#handlebars-template").html(),
-          templateCompile = Handlebars.compile(handlebarsTemplate),
-          data = {
-            "battlerites": [{
-                "title": "Tome of Restoration",
-                "imgurl": "br6 (11)",
-                "border": "sup",
-                "desc": "Tome of Destruction leashon on to nearby allies healing them for 4 health per second."
-              },
-              {
-                "title": "Grimoire of Death",
-                "imgurl": "br7 (9)",
-                "border": "o",
-                "desc": "Grimoire of Chaos has 40% increased pull force and deals 10 additional damage."
-              },
-              {
-                "title": "Undermine",
-                "imgurl": "br5 (12)",
-                "border": "sup",
-                "desc": "Shackle reduces target's damage and healing output by 50% for 3s."
-              },
-              {
-                "title": "Disruption",
-                "imgurl": "br2 (11)",
-                "border": "c",
-                "desc": "Chaos Grip inflicts Silence on target hit for 0.4s to 0.8s depending on charge-up."
-              },
-              {
-                "title": "Whizz",
-                "imgurl": "br5 (11)",
-                "border": "m",
-                "desc": "Using Displace grants a 60% fading haste that lasts for 2s."
-              }
-            ]
+  </div>
+  <div class="footer grid-x brf">
+    <div class="update">
+    </div>
+    <div class="copyright">
+      <span>All content Battlerite / Stunlock Studios ©2017</span>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="NTXHCVWM2U59A">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script type='text/javascript' src="../js/jquery-ui.min.js"></script>
+  <script src="../bower_components/what-input/dist/what-input.min.js"></script>
+  <script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+  <script src="../js/app.min.js"></script>
+  <script src="../js/handlebars-v4.0.11.min.js"></script>
+  <script>
+    var $battleRites = $("#build1"),
+      handlebarsTemplate = $("#handlebars-template").html(),
+      templateCompile = Handlebars.compile(handlebarsTemplate),
+      data = {
+        "battlerites": [{
+            "title": "Warlock's Grip",
+            "imgurl": "br2 (11)",
+            "border": "u",
+            "desc": "Increases the range of Chaos Grip by 25%."
+          },
+          {
+            "title": "Disruption",
+            "imgurl": "br2 (11)",
+            "border": "c",
+            "desc": "Chaos Grip inflicts Silence on target hit for 0.4s to 0.8s depending on charge-up."
+          },
+          {
+            "title": "Wreak Havoc",
+            "imgurl": "br5 (11)",
+            "border": "o",
+            "desc": "Displace increases your Arcane Fire attack speed by 30% for 2.5s."
+          },
+          {
+            "title": "Whizz",
+            "imgurl": "br5 (11)",
+            "border": "m",
+            "desc": "Using Displace grants a 60% fading haste that lasts for 2s."
+          },
+          {
+            "title": "Grimoire of Death",
+            "imgurl": "br7 (9)",
+            "border": "o",
+            "desc": "Grimoire of Chaos has 40% increased pull force and deals 10 additional damage."
           }
-        $battleRites.html(templateCompile(data));
-      </script>
-      <script>
-          var $battleRites = $("#build3"),
-            handlebarsTemplate = $("#handlebars-template").html(),
-            templateCompile = Handlebars.compile(handlebarsTemplate),
-            data = {
-              "battlerites": [{
-                  "title": "Exhaust",
-                  "imgurl": "br_1 (11)",
-                  "border": "c",
-                  "desc": "Landing 3 consecutive Arcane Fires inflicts a 0.4s Fading Snare."
-                },
-                {
-                  "title": "Disruption",
-                  "imgurl": "br2 (11)",
-                  "border": "c",
-                  "desc": "Chaos Grip inflicts Silence on target hit for 0.4s to 0.8s depending on charge-up."
-                },
-                {
-                  "title": "Undermine",
-                  "imgurl": "br5 (12)",
-                  "border": "sup",
-                  "desc": "Shackle reduces target's damage and healing output by 50% for 3s."
-                },
-                {
-                  "title": "Tome of Restoration",
-                  "imgurl": "br6 (11)",
-                  "border": "sup",
-                  "desc": "Tome of Destruction leashon on to nearby allies healing them for 4 health per second."
-                },
-                {
-                  "title": "Grimoire of Death",
-                  "imgurl": "br7 (9)",
-                  "border": "o",
-                  "desc": "Grimoire of Chaos has 40% increased pull force and deals 10 additional damage."
-                }
-              ]
-            }
-          $battleRites.html(templateCompile(data));
-        </script>
-    <script>
-      var characterJson = ["Bakko","Croak","Freya","Raigon","Rook","Ruh Kaan","Shifu","Thorn","Ashka","Destiny","Ezmo","Iva","Jade","Jumong","Taya","Varesh","Blossom","Lucie","Oldur","Pearl","Pestilus","Poloma","Sirius" ];
-    </script>
-  </body>
+        ]
+      }
+    $battleRites.html(templateCompile(data));
+  </script>
+  <script>
+    var $battleRites = $("#build2"),
+      handlebarsTemplate = $("#handlebars-template").html(),
+      templateCompile = Handlebars.compile(handlebarsTemplate),
+      data = {
+        "battlerites": [{
+            "title": "Tome of Restoration",
+            "imgurl": "br6 (11)",
+            "border": "sup",
+            "desc": "Tome of Destruction leashon on to nearby allies healing them for 4 health per second."
+          },
+          {
+            "title": "Grimoire of Death",
+            "imgurl": "br7 (9)",
+            "border": "o",
+            "desc": "Grimoire of Chaos has 40% increased pull force and deals 10 additional damage."
+          },
+          {
+            "title": "Undermine",
+            "imgurl": "br5 (12)",
+            "border": "sup",
+            "desc": "Shackle reduces target's damage and healing output by 50% for 3s."
+          },
+          {
+            "title": "Disruption",
+            "imgurl": "br2 (11)",
+            "border": "c",
+            "desc": "Chaos Grip inflicts Silence on target hit for 0.4s to 0.8s depending on charge-up."
+          },
+          {
+            "title": "Whizz",
+            "imgurl": "br5 (11)",
+            "border": "m",
+            "desc": "Using Displace grants a 60% fading haste that lasts for 2s."
+          }
+        ]
+      }
+    $battleRites.html(templateCompile(data));
+  </script>
+  <script>
+    var $battleRites = $("#build3"),
+      handlebarsTemplate = $("#handlebars-template").html(),
+      templateCompile = Handlebars.compile(handlebarsTemplate),
+      data = {
+        "battlerites": [{
+            "title": "Exhaust",
+            "imgurl": "br_1 (11)",
+            "border": "c",
+            "desc": "Landing 3 consecutive Arcane Fires inflicts a 0.4s Fading Snare."
+          },
+          {
+            "title": "Disruption",
+            "imgurl": "br2 (11)",
+            "border": "c",
+            "desc": "Chaos Grip inflicts Silence on target hit for 0.4s to 0.8s depending on charge-up."
+          },
+          {
+            "title": "Undermine",
+            "imgurl": "br5 (12)",
+            "border": "sup",
+            "desc": "Shackle reduces target's damage and healing output by 50% for 3s."
+          },
+          {
+            "title": "Tome of Restoration",
+            "imgurl": "br6 (11)",
+            "border": "sup",
+            "desc": "Tome of Destruction leashon on to nearby allies healing them for 4 health per second."
+          },
+          {
+            "title": "Grimoire of Death",
+            "imgurl": "br7 (9)",
+            "border": "o",
+            "desc": "Grimoire of Chaos has 40% increased pull force and deals 10 additional damage."
+          }
+        ]
+      }
+    $battleRites.html(templateCompile(data));
+  </script>
+  <script>
+    var characterJson = ["Bakko", "Croak", "Freya", "Raigon", "Rook", "Ruh Kaan", "Shifu", "Thorn", "Ashka", "Destiny",
+      "Ezmo", "Iva", "Jade", "Jumong", "Taya", "Varesh", "Blossom", "Lucie", "Oldur", "Pearl", "Pestilus", "Poloma",
+      "Sirius", "Alysia"
+    ];
+  </script>
+</body>
 
 </html>
