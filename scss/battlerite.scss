@@ -1,34 +1,46 @@
-.champimg{
+.footer.brf {
+    color: #fff;
+    @include breakpoint(small only) {
+        background-color: #0E1E38;
+        opacity: 1;
+    }
+}
+.champimg {
     position: fixed;
     right: 0;
-    bottom:0;
+    bottom: 0;
     z-index: 10;
     pointer-events: none;
-    img{
+    img {
         width: 890px;
     }
     @include breakpoint(xxlarge) {
         right: 7%;
     }
     @include breakpoint(small only) {
-        display:none;
+        display: none;
     }
-    
 }
+
 .hero-img.br {
     background: url(../img/brbgimg.jpg) center center no-repeat;
     background-size: cover;
     min-height: 100vh;
+    background-size: 102%;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-content: center;
     box-shadow: none;
+    @include breakpoint(small only) {
+        background-size: cover;
+    }
+    
     .grid-container.build {
         .cell.buildheader {
             padding: 0 0.5rem;
-            h1{
+            h1 {
                 margin-bottom: 25px;
             }
             .card-home {
@@ -78,7 +90,7 @@
             background: none;
             border: none;
             .tabs-panel {
-                padding:0;
+                padding: 0;
             }
             .cell {
                 padding: 0 0.5rem 0 0.5rem;
@@ -87,19 +99,20 @@
                 }
             }
             .card {
-                overflow:hidden;
+                overflow: hidden;
                 font-size: 0.85rem;
                 min-height: 301px;
-                height:100%;
+                height: 100%;
                 border-radius: 4px;
                 margin-bottom: 0;
                 background-color: #F3F3F3;
                 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.03), 0 18px 19px rgba(0, 0, 0, 0.03);
                 @include breakpoint(small only) {
-                    min-height: 268px;
-                    height: 268px;
+                    min-height: 0;
+                    height: auto;
                 }
-                h4{
+                h4 {
+                    font-weight: 500;
                     font-size: 1.22rem;
                 }
                 .card-section {
@@ -120,13 +133,13 @@
                         &.m {
                             border-color: #FFB800;
                         }
-                        &.c{
+                        &.c {
                             border-color: #F654CA;
                         }
-                        &.u{
+                        &.u {
                             border-color: #138BE5;
                         }
-                        &.mix{
+                        &.mix {
                             border-color: #BBFFFC;
                         }
                     }
@@ -134,14 +147,18 @@
             }
             .credits {
                 height: 100%;
-                .card{
+                .card {
                     margin-top: 50px;
                     min-height: 147px;
-                    height:100%;
+                    height: 100%;
                     border-radius: 0px;
                     padding: 0.9rem 1.5rem 1.05rem 1.5rem;
-                    h4{
+                    h4 {
                         font-size: 1.5rem;
+                    }
+                    @include breakpoint(small only) {
+                        margin-top: 20px;
+                        margin-bottom: 30px;
                     }
                 }
                 .channels {
@@ -174,7 +191,7 @@
                     }
                     .channel__item {
                         margin: 0 0 0.6em;
-                        &:last-child{
+                        &:last-child {
                             margin: 0;
                         }
                     }
@@ -263,8 +280,6 @@
                     }
                 }
             }
-            
-            
         }
     }
 }

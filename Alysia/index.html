@@ -43,7 +43,7 @@
       <div class="grid-container build">
         <div class="grid-y">
           <div class="cell buildheader">
-            <a href="../index.html">
+            <a href="../">
               <h1>Battlerite
                 <span class="lword">Builds</span>
               </h1>
@@ -64,8 +64,11 @@
                 <div class="cell">
                   <h3 class="mobh3">Builds:</h3>
                   <ul class="tabs" data-tabs id="br-builds">
-                    <li class="tabs-title is-active">
-                      <a href="#panel1" aria-selected="true">Build by Hotbiscuit</a>
+                      <li class="tabs-title is-active">
+                          <a href="#panel1" aria-selected="true">Build by Averse/Miniluva</a>
+                        </li>
+                    <li class="tabs-title">
+                      <a href="#panel2" aria-selected="true">Build by Hotbiscuit</a>
                     </li>
                   </ul>
                 </div>
@@ -93,11 +96,43 @@
                 <div class="card">
                   <h4>Credits</h4>
                   <nav class="channels channel--adsila">
-                    <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
-                      <span class="channel__item-name">Hotbiscuit</span>
-                      <span class="channel__item-label">Check out his Twitch channel</span>
-                    </a>
-                  </nav>
+                      <a class="channel__item" href="https://www.twitch.tv/averse">
+                        <span class="channel__item-name">Averse</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                      <a class="channel__item" href="https://www.twitch.tv/miniluva">
+                        <span class="channel__item-name">Miniluva</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+              <div class="grid-x grid-padding-x medium-up-5" id="build2">
+                <script type="text/handlebars-template" id="handlebars-template">
+                  {{#battlerites}}
+                  <div class="cell">
+                    <div class="card">
+                      <div class="card-section text-center">
+                        <h4>{{title}}</h4>
+                        <img class="{{border}}" src="../img/battlerites/{{imgurl}}.png">
+                        <p>{{desc}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {{/battlerites}}
+                </script>
+              </div>
+              <div class="cell shrink credits">
+                <div class="card">
+                  <h4>Credits</h4>
+                  <nav class="channels channel--adsila">
+                      <a class="channel__item" href="https://www.twitch.tv/hotbiscuitorz">
+                        <span class="channel__item-name">Hotbiscuit</span>
+                        <span class="channel__item-label">Check out his Twitch channel</span>
+                      </a>
+                    </nav>
                 </div>
               </div>
             </div>
@@ -125,27 +160,66 @@
     <script src="../js/app.min.js"></script>
     <script src="../js/handlebars-v4.0.11.min.js"></script>
     <script>
-      var $battleRites = $("#build1"),
+        var $battleRites = $("#build1"),
+          handlebarsTemplate = $("#handlebars-template").html(),
+          templateCompile = Handlebars.compile(handlebarsTemplate),
+          data = {
+            "battlerites": [{
+                "title": "Ice breaker",
+                "imgurl": "br_6 (48)",
+                "border": "o",
+                "desc": "Ice Lance deals 3 bonus damage and breaks Freeze before dealing damage."
+              },
+              {
+                "title": "Christalline Lattice",
+                "imgurl": "br_4 (48)",
+                "border": "sup",
+                "desc": "Glacial Prism absorbs up to 12 more damage and its explosion radius is increased by 20%."
+              },
+              {
+                "title": "Figure Skating",
+                "imgurl": "br_4 (48)",
+                "border": "m",
+                "desc": "Glacial Prism grants the target a 60% Fading Haste for 1.4s."
+              },
+              {
+                "title": "Snowstorm",
+                "imgurl": "br_3 (48)",
+                "border": "o",
+                "desc": "Flash Freeze impact leaves a lingering snowstorm that deals 15 damage and inflicts Chill over 2.5s. The damage affects targets with Freeze directly."
+              },
+              {
+                "title": "Blizzard",
+                "imgurl": "br_3 (48)",
+                "border": "u",
+                "desc": "Flash Freeze radius is increased by 20% and cooldown is reduced by 1s."
+              }
+            ]
+          }
+        $battleRites.html(templateCompile(data));
+      </script>
+    <script>
+      var $battleRites = $("#build2"),
         handlebarsTemplate = $("#handlebars-template").html(),
         templateCompile = Handlebars.compile(handlebarsTemplate),
         data = {
           "battlerites": [{
-              "title": "Piercing Cold",
+              "title": "Ice breaker",
               "imgurl": "br_6 (48)",
               "border": "o",
-              "desc": "Ice Lance pierces through enemies and range increases by 10%. Deals 30% reduced damage after each pierce."
-            },
-            {
-              "title": "Blizzard",
-              "imgurl": "br_3 (48)",
-              "border": "u",
-              "desc": "Flash Freeze radius is increased by 20% and cooldown is reduced by 1s."
+              "desc": "Ice Lance deals 3 bonus damage and breaks Freeze before dealing damage."
             },
             {
               "title": "Twirl",
               "imgurl": "br_5 (48)",
               "border": "m",
               "desc": "Recast Arctic Wind to perform a short leap"
+            },
+            {
+              "title": "Blizzard",
+              "imgurl": "br_3 (48)",
+              "border": "u",
+              "desc": "Flash Freeze radius is increased by 20% and cooldown is reduced by 1s."
             },
             {
               "title": "Figure Skating",

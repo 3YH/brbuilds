@@ -1,5 +1,12 @@
 $(document).foundation();
 
+$('.hero-img' ).mousemove(function(e){
+    var amountMovedX = (e.pageX * -1 / 50);
+    var amountMovedY = (e.pageY * -1 / 50);
+    $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+    console.log(amountMovedX);
+});
+
 $(document).ready(function(){
     
         var search = $('#char-name');
