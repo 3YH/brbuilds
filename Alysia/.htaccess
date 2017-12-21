@@ -1,9 +1,0 @@
-<FilesMatch "\.(jpg|jpeg|png|gif|swf|js)$">
-    Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
-
-# DO NOT REMOVE THIS LINE AND THE LINES BELOW SSL_REDIRECT:SSL_REDIRECT
-RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-# DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:SSL_REDIRECT

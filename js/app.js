@@ -4,7 +4,6 @@ $('.hero-img').mousemove(function (e) {
     var amountMovedX = (e.pageX * -1 / 50);
     var amountMovedY = (e.pageY * -1 / 50);
     $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-    console.log(amountMovedX);
 });
 
 $(document).ready(function () {
@@ -15,17 +14,13 @@ $(document).ready(function () {
 
     function doSearch() {
         var value = $(search).val();
-
-        window.location.href = value;
+        var split_url = value.split('/');
+            if (split_url.length = 1) {
+                window.location.href = '../' + value;
+            } else {
+                window.location.href = value ;
+            }
     }
-
-    $('#images').on("click", "img", function () {
-
-        var title = $(this).attr('data-name');
-
-        $('#search input').val(title);
-        doSearch();
-    });
 
     $(search).keyup(function (e) {
         if (e.which == 13) {
